@@ -87,30 +87,32 @@ $(window).scroll(function (){
 
 
 
+
+
+
 //ルートパス開発環境---------------------------------------------------------------------
-$(document).ready( function(){
-	if(!location.protocol.match("http")){
-		var ref = "https://setolasfuturecreate.github.io/sftdemo2026/";
-		if( ref.match(/\/$/) ){
-			ref = ref.replace(/\/$/, "");
-		}
-		$("[src^='/']","html").each(function(){
-			result = ref + $(this).attr("src");
-			$(this).attr("src", result);
-		});
-		$("[href^='/']","html").each(function(){
-			result = ref + $(this).attr("href");
-			$(this).attr("href", result);
-		});
-		$("[action^='/']","html").each(function(){
-			result = ref + $(this).attr("action");
-			$(this).attr("action", result);
-		});
-	}
+$(document).ready(function () {
+
+    // GitHub Pages上だけ有効
+    if (location.hostname !== "setolasfuturecreate.github.io") {
+        return;
+    }
+
+    var ROOT = "https://setolasfuturecreate.github.io/sftdemo2026";
+
+    $("[src^='/']").each(function () {
+        $(this).attr("src", ROOT + $(this).attr("src"));
+    });
+
+    $("[href^='/']").each(function () {
+        $(this).attr("href", ROOT + $(this).attr("href"));
+    });
+
+    $("[action^='/']").each(function () {
+        $(this).attr("action", ROOT + $(this).attr("action"));
+    });
+
 });
-
-
-
 
 
 //ルートパス検索---------------------------------------------------------------------
