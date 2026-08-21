@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* noscript */
+
+.nosc{
+  display: block;
+  clear: both;
+  margin :10px 10px 10px 10px;
+  padding :10px;
+  border 2px solid rgb(232, 232, 232) ;
+  text-align: left ;
+  background-color: rgba(255,255,255, 0.7);
+}
+.nosc p {
+  margin-top :5px;
+  margin-bottom :0px;
+}
+.nosc ul , .nosc ul li {
+  margin-top :5px;
+  margin-bottom :0px;
+}
+.nosc ul li {
+  display: inline-block;
+  margin-right:20px;
+}
+
+@media print{
+.nosc{
+  display:none;
+}
+}
+
+.header-bg{
+margin-top:100px;
+}
+
+
+
+
+
+
+
+
+figure img {width:300px !important;height:auto;}
+thead th , thead td{  vertical-align: top !important;}
+table tbody th{ text-align: left !important;}
+.btn{display: none;}
+
+/* ヘッダー */
+.l-header {  position :absolute; 	box-shadow: none; z-index : 0;}
+.header_logo_info{  float:none;}
+.top-navigation-global , .p-navigation-global {display: none !important;}
+.sp{display: none;}
+
+
+
+
+
+
+/* フッター */
+.footer_02 .f_r {
+  float:none;
+  width :100%;
+  max-width:none;
+  margin: 0 ;
+  padding: 0;
+}
+.none960{display: none;}
+
+@media screen and (max-width:960px) {
+	.footer_01 .f_site_map{
+		display:block;
+	}
+	.footer_01 .f_site_map .f_box{
+    	margin: 30px 15px 0 15px;
+    	width: calc(100% - 30px) !important;
+}
+	.footer_01 .f_site_map dl {
+    	margin: 0;
+    }
+    .footer_01 .f_site_map dl dd ul li{
+    	margin : 10px 0;
+	}
+	}
+	
+.return{display: none;}
+
+
+
+
+
+
+
+/* コンテンツ */
+.inner_top , .main , .top_image_section img{
+  padding-top :0px;
+}
+.top_image_section img{
+  margin-top : 300px;
+}
+
+@media print{
+.top_image_section img{
+  margin-top :130px;
+}
+}
+
+.headline_nomal , .headline_img{
+  margin-top : 300px;
+}
+
+@media print{
+.headline_nomal , .headline_img{
+  margin-top :130px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/* 新着情報 */
+.top_tab , .el_searchResult{display: none;}
+
+/* お知らせ一覧 */
+.bl_selectBlock{display: none;}
+.js_target{ display: block;}
+
+/*年度のタブ切り替え*/
+.topix_tab .tab-list{ display: none;}
+.topix_tab .tab-contents{display: block;}
+
+/* 担当課からのお知らせ */
+.pickup_box ul li{clear: both !important;}
+.pickup_photo2{float: left !important;vertical-align: top;width:80px;height: auto;border : 1px solid #bbbbbb;box-shadow: none;margin:5px;}
+
+/* サイトマップ */
+.sitemap{margin:10px 10px -5px 0px;width:auto;height:26px;}
+
+/* お知らせ一覧 絞り込み検索 */
+.release_form , .tab-list{display: none;}
+
+/* 政策 ヘッド アイコン&画像 */
+.top_icon{width:26px; height:auto;}
+
+/* 様式 */
+.yo_table th , .yo_table td{ vertical-align:top !important;text-align: left !important;}
+
+/* サムネイル付きリスト 2種類 */
+.thumli_l .yoko , .thumli_s .yoko {margin-left:20px;width:300px !important;height:auto;border : 1px solid #bbbbbb;}
+.thumli_l .tate , .thumli_s .tate {margin:0 80px;width:160px !important;height:auto;border : 1px solid #bbbbbb;}
+
