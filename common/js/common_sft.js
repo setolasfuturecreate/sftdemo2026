@@ -87,7 +87,27 @@ $(window).scroll(function (){
 
 
 
-
+//ルートパス開発環境---------------------------------------------------------------------
+$(document).ready( function(){
+	if(!location.protocol.match("http")){
+		var ref = "https://setolasfuturecreate.github.io/sftdemo2026/";
+		if( ref.match(/\/$/) ){
+			ref = ref.replace(/\/$/, "");
+		}
+		$("[src^='/']","html").each(function(){
+			result = ref + $(this).attr("src");
+			$(this).attr("src", result);
+		});
+		$("[href^='/']","html").each(function(){
+			result = ref + $(this).attr("href");
+			$(this).attr("href", result);
+		});
+		$("[action^='/']","html").each(function(){
+			result = ref + $(this).attr("action");
+			$(this).attr("action", result);
+		});
+	}
+});
 
 
 
