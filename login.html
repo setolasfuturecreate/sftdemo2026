@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ログイン</title>
+</head>
+<body>
+
+<h2>パスワードを入力してください</h2>
+
+<input type="password" id="pw">
+<button onclick="login()">ログイン</button>
+
+<script>
+function login() {
+
+    const password = "demo2026";
+
+    if(document.getElementById("pw").value === password){
+        sessionStorage.setItem("demo_auth", "ok");
+        location.href = "index.html";
+    } else {
+        alert("パスワードが違います");
+    }
+}
+</script>
+
+  <!-- common js -->
+  <script src "common/js/jquery.min.js"></script>
+  <script src "common/js/common_sft.js"></script>
+  <script>
+    $('.drawer__nav a[href]').on('click', function(event) {
+        $('.menu-button').trigger('click');
+    });
+  </script>
+  <!--[if lt IE 9]><script type="text/javascript" src="common/js/html5/html5shiv.min.js"></script><script type="text/javascript" src="common/js/html5/respond.min.js"></script><![endif]-->
+
+
+</body>
+</html>
