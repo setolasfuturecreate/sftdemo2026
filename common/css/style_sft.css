@@ -885,7 +885,7 @@ margin: 0 30px 5px 0;
 
 @media(max-width:720px){
 .link_ul li a , .link_ul_d li a{
-  padding:11px 10px 11px 1.8rem ;
+  padding:10px 10px 10px 1.8rem ;
 }
 /* beforeの設定（円形） */
 .link_ul li::before , .link_ul_d li::before{
@@ -894,7 +894,7 @@ margin: 0 30px 5px 0;
 
 /* afterの設定（内側の矢印） */
 .link_ul li::after {
-  top:1.75rem;
+  top:1.2rem !important;
 }
 .link_ul_d li::after {
   top:0.96rem !important;
@@ -951,10 +951,10 @@ line-height:1.8 ;
   border-bottom: 0 ;
 }
 .pglink li {
-  border-bottom: 1px solid rgb(225, 225, 225)  ; 
+  border-bottom  1px solid rgb(225, 225, 225)  ; 
 }
 .pglink li:nth-child(1) {
-  border-top: 1px solid rgb(225, 225, 225) ;
+  border-top  1px solid rgb(225, 225, 225) ;
 }
 }
 @media print{
@@ -1598,6 +1598,7 @@ table.table_row2_100 tr td:nth-child(2) , table.table_row2_90 tr td:nth-child(2)
 table.table_row2_100 tr:nth-child(1) th:nth-child(1) , table.table_row2_90 tr:nth-child(1) th:nth-child(1) , table.table_row2 tr:nth-child(1) th:nth-child(1){
   border-top : 1px solid rgb(170, 170, 170);
 }
+
 }
 
 
@@ -2794,7 +2795,7 @@ footer {
   max-width  calc((100% - 90px) / 3 );
   min-width  calc((100% - 180px) / 6 );
      background   rgb(243,25,252);
-  width : 280px;
+  max-width : 280px;
 
 }
 
@@ -3224,16 +3225,7 @@ footer ul.link_area2 li a{
   margin : 5px 0 0px 0px;
 }
 
-.footer_01 .f_site_map .f_logo .koushiki:nth-child(1) li img{
-  width:77%;
-  height:auto;
-}
 
-.footer_01 .f_site_map .f_logo .koushiki:nth-child(2) li img{
-  width :60%;
-  height :auto;
-
-}
 }
 
 

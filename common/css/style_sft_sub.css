@@ -1842,7 +1842,7 @@ margin:0;
 .gallery {
   display:grid;
   grid-template-columns  repeat(4, 1fr);
-  gap:10px;
+  gap:15px;
 
 }
 
@@ -1869,6 +1869,7 @@ margin:0;
 
 .gallery.brands-4 img{
   height : 240px; /* ← 縦固定 */
+  width:100%;
 }
 
 .gallery figcaption{
@@ -1920,6 +1921,9 @@ margin:0;
   タブレット（2×2）
 ========================= */
 @media (max-width: 720px) {
+.gallery {
+margin:0 20px;
+}
   .gallery.brands-4 , .gallery.news-1 , .gallery.news-2 , .gallery.news-3 , .gallery.news-4 , .gallery.news-5 , .gallery.news-6 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1932,6 +1936,12 @@ margin:0;
   .gallery.brands-4 , .gallery.news-1 , .gallery.news-2 , .gallery.news-3 , .gallery.news-4 , .gallery.news-5 , .gallery.news-6 {
     grid-template-columns: 1fr;
   }
+  .gallery.brands-4 img{
+  height :auto; /* ← 縦固定 */
+  width:100%;
+  
+}
+  
 }
 
 
@@ -2023,6 +2033,8 @@ table.tenpo{
 .tenpo th , .tenpo td{
   display : block;
 }
+.tenpo th{ width:auto;}
+
 .tenpo tr th:nth-child(1){
   padding :5px 15px !important ;
   border-top: 0px;
@@ -2041,7 +2053,6 @@ table.tenpo{
 .tenpo tr:last-child td{
     border-bottom: 1px solid rgb(170, 170, 170);
 }
-
 }
 
 
@@ -2418,7 +2429,7 @@ padding : 30px 2px;
 
 
 .release_table .tag0102  {
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.0rem;
 }
 
 .release_table .tag0201  {
@@ -2752,7 +2763,8 @@ input[type=checkbox]:indeterminate:after {
 
 @media screen and (max-width: 480px) {
 .img_link{
-  display:block;
+  grid-template-columns : repeat(1, 1fr);
+  
 }
 }
 
@@ -2847,25 +2859,19 @@ font-weight:bold;
   padding-left: 2.2rem; /* マークの横幅 + 余白 */
   width: auto;
   padding-bottom: 5px;
-
-}
-
-
-
-
-.table_timeline tr td{
 padding-top:0;
 padding-bottom:15px;
-  padding-left: 2.2rem; /* マークの横幅 + 余白 */
 }
+
+
 
 
 .table_timeline tr th::before{
   position: absolute;
-  left: -0.9rem;
-  top: 21px;         /* 見た目で微調整 */
-    width: 1.6rem;
-    height: 1.6rem;
+  left: -0.7rem;
+  top: 0.23rem;         /* 見た目で微調整 */
+    width: 1.2rem;
+    height: 1.2rem;
     content:  '';
     border-radius: 100%;
     background: rgb(0, 140, 207);
@@ -3143,6 +3149,11 @@ background :transparent;
   border-top :0;
   padding:10px 15px;
 }
+.group_table .link_ul li a{
+padding-top 0;
+paddng-bottom 0;
+}
+
 }
 
 
@@ -3647,6 +3658,8 @@ div{
     transform: translateY(-25%) rotate(45deg);
     width: 10px;
     height: 10px;
+    padding-left:6px;
+    padding-right 5px;
     margin-left: 1rem;
     border-bottom: 3px solid rgb(0,140,207);
     border-right: 3px solid rgb(0,140,207);
@@ -3663,7 +3676,7 @@ div{
     position: relative;
     transform: translateY(-10px);
     opacity: 0;
-    margin: -1.8rem 5rem 0 6rem;
+    margin: -1.8rem 2rem 0 6rem;
     padding-left   6rem;
     padding-top 0rem ;
     padding-bottom 0.6rem;
