@@ -87,9 +87,6 @@ $(window).scroll(function (){
 
 
 
-
-
-
 //ルートパス開発環境---------------------------------------------------------------------
 $(document).ready(function () {
 
@@ -113,6 +110,10 @@ $(document).ready(function () {
     });
 
 });
+
+
+
+
 
 
 //ルートパス検索---------------------------------------------------------------------
@@ -233,38 +234,6 @@ query = urlParams.get("q");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 検索オーバーレイ---------------------------------------------------------------------
 const toggleBtn = document.getElementById("searchToggle");
 const overlay = document.getElementById("searchOverlay");
@@ -369,11 +338,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 (function () {
-  var base = "https://setolasfuturecrete.com";
+  var base = "https://setolasfoodtech.com/";
 
   var fullPath = location.pathname;
 
-  var path = fullPath.split("setolasfuturecrete.com").pop();
+  var path = fullPath.split("setolasfoodtech.com").pop();
 
   // ✅ index.htmlだけ削除
   path = path.replace(/index\.html$/, "");
@@ -772,10 +741,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var locations = [
   [34.345076,134.047506, "創作和食 瀬to菜", "japanese-restaurant", "/brands/food_and_dining/#setona"],
   [34.344883,134.051239, "割烹 匠", "japanese-restaurant", "/brands/food_and_dining/#takumi"],
+  [34.346642,134.050781, "高松三越ランドマーク", "restaurant", "/brands/food_and_dining/#landmark"],
   [34.307522,133.809052, "バーガーキング® イオンタウン宇多津", "fast-food", "/brands/food_and_dining/#burger-king"],
   [34.350414,134.047607, "バーガーキング® 高松オルネ", "fast-food", "/brands/food_and_dining/#burger-king"],
   [34.603951,133.761246, "バーガーキング® アリオ倉敷", "fast-food", "/brands/food_and_dining/#burger-king"],
   [34.343304,134.049057, "サウィ食堂 高松店", "korean-restaurant", "/brands/food_and_dining/#sawee-syokudou"],
+  [34.345103,134.05087, "讃岐おもちゃ美術館 shop・cafe", "cafe", "/brands/cafe_and_sweets/#sanuki-toy-museum"],
+  [34.372085,133.942311, "旧南原邸", "cafe", "/brands/cafe_and_sweets/#kyu-nanbaratei"],
+  [34.224956,133.77489, "まおかふぇ", "cafe", "/brands/cafe_and_sweets/#maocafe"],
   [34.328655,134.041946, "Cafe de Ritsuin（カフェ・ド・リツリン）", "cafe", "/brands/cafe_and_sweets/#cafe-de-ritsurin"],
   [34.350414,134.047607, "Passerelle（パスレル）", "sweets", "/brands/cafe_and_sweets/#passerelle"],
   [34.346642,134.050781, "Maison de CIELetMER（メゾン・ド・シエルエメア）", "sweets", "/brands/cafe_and_sweets/#maison-de-cleletmer"]
@@ -817,9 +790,32 @@ function drawAll(data) {
   markers = [];
 
   // リスト初期化
-  if (shopList) {
-    shopList.innerHTML = "";
-  }
+if (shopList) {
+  shopList.innerHTML = "";
+
+  // 全件表示ボタン
+  var resetItem = document.createElement("div");
+  resetItem.className = "list-item reset";
+  resetItem.innerText = "🔄 全件表示";
+
+  resetItem.onclick = function() {
+
+    // 選択状態を解除
+    document.querySelectorAll("#shopList .list-item")
+      .forEach(el => el.classList.remove("active"));
+
+    // 検索欄もクリアしたい場合
+    var searchBox = document.getElementById("search");
+    if (searchBox) {
+      searchBox.value = "";
+    }
+
+    // 全店舗再表示
+    drawAll(locations);
+  };
+
+  shopList.appendChild(resetItem);
+}
 
   data.forEach(function(loc, index) {
 
@@ -901,6 +897,9 @@ function sortNorth() {
   var sorted = [...locations].sort((a, b) => b[0] - a[0]);
   drawAll(sorted);
 }
+
+
+
 
 
 
