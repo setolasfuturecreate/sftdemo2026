@@ -8,6 +8,7 @@
 
 .slider-wrap {
   position: relative;
+
 }
 
 /* スライダー（下） */
@@ -15,6 +16,8 @@
   position: relative;
   z-index  1;
 }
+
+
 
 /* オーバーレイ */
 .slider-wrap::before {
@@ -56,7 +59,7 @@
 
 
 .hero-text h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 10px;
     text-align: center;
     font-family: serif;
@@ -67,26 +70,6 @@
 }
 
 
-
-@media screen and (max-width:720px) {
-.hero-text h1 {
-  font-size : 1.6rem;
-  padding:0 50px;
-}
-.hero-text p {
-  padding:0 50px;
-}
-}
-
-
-@media screen and (max-width:480px) {
-.hero-text h1 {
-  font-size: 1.2rem;
-}
-.hero-text p {
-  display:none;
-}
-}
 
 
 
@@ -120,8 +103,8 @@ h2#slide {
     .splide__slide img {
       width : 100%;
       height : auto;
-      width   auto;
-      height   630px;
+      width  auto;
+      height  280px !important;
       max-width:100vw;
       object-fit: cover;         /* 余白を作らずフィット＝中央クロップ */
       object-position: center;   /* 中心基準でトリミング */
@@ -139,7 +122,7 @@ h2#slide {
       padding: 40px 16px;
       color: rgb(255,255,255);
       background: linear-gradient(transparent, rgba(0,0,0,.65));
-      font-size   0.8rem;
+      font-size :  0.9rem;
       text-align: center;
       line-height: 1.5;
       font-family: serif;
@@ -159,9 +142,6 @@ h2#slide {
   opacity: 1;
   transform: translateY(0);
 }
-
-
-
 
 
 
@@ -198,23 +178,50 @@ h2#slide {
     }
     .your-class-page.is-active { background: #333; }
 
+
+
 @media (max-width: 960px) {
-    .slider-wrap {
-      margin: 105px 0 0 0;            /* 中央寄せは不要。常に全幅 */
+ .slider-wrap {
+  margin: 100px 0 0 0;            /* 中央寄せは不要。常に全幅 */
+
 }
-    .splide__slide img {
-      width :  100%;
+
+ .splide__slide img {
+      width : 100%;
       height : 100%;
 }
+
 }
 
 
 @media (max-width: 720px) {
-    .slider-wrap {
-      margin: 40px 0 0 0;            /* 中央寄せは不要。常に全幅 */
-}
+ .slider-wrap {
+   margin: 40px 0 0 0;            /* 中央寄せは不要。常に全幅 */
 }
 
+ .splide__slide img {
+      width : auto;
+      height : 280px !important;
+}
+      
+.hero-text h1 {
+  font-size : 1.4rem;
+  padding:0 50px;
+}
+.hero-text p {
+  padding:0 50px;
+}
+
+}
+
+@media screen and (max-width:480px) {
+.hero-text h1 {
+  font-size: 1.2rem;
+}
+.hero-text p {
+  display:none;
+}
+}
 
 
 
@@ -602,7 +609,7 @@ h2.ttl  {
   display : grid;
   grid-template-columns: repeat(4, minmax(0, 1fr)); 
   grid-auto-rows: auto;
-  gap: 30px;
+  gap: 20px;
 
 }
 
@@ -1530,6 +1537,12 @@ font-size:1.1rem !important;
 }
 
 
+
+
+
+
+
+
 /* ------------------------------ ロゴと名前の組み合わせ ------------------------------- */
 
 
@@ -1653,12 +1666,12 @@ font-size:1.1rem !important;
 
 
 
-.store-title-c1 , .store-title-c2 , .store-title-c3 , .store-title-c4 , .store-title-c5 , .store-title-c6 , .store-title-c7{
+.store-title-c1 , .store-title-c2 , .store-title-c3 , .store-title-c4 , .store-title-c5 , .store-title-c6 , .store-title-c7 , .store-title-c8 , .store-title-c9 , .store-title-c10 {
 margin:0;
   line-height: 1.2;  /* 見出しの行の高さとアイコンの整合を取りやすくする */
 }
 
-.store-title-c1::before , .store-title-c2::before , .store-title-c3::before , .store-title-c4::before , .store-title-c5::before , .store-title-c6::before , .store-title-c7::before , .store-title-c8::before , .store-title-c9::before {
+.store-title-c1::before , .store-title-c2::before , .store-title-c3::before , .store-title-c4::before , .store-title-c5::before , .store-title-c6::before , .store-title-c7::before , .store-title-c8::before , .store-title-c9::before , .store-title-c10::before {
   content: "";
   display: inline-block;
   /* ここを大きくする */
@@ -1680,6 +1693,7 @@ margin:0;
 .store-title-c7::before{background : url(../../common/img/c7.png) no-repeat center / contain;}
 .store-title-c8::before{background : url(../../common/img/c8.png) no-repeat center / contain;}
 .store-title-c9::before{background : url(../../common/img/c9.png) no-repeat center / contain;}
+.store-title-c10::before{background : url(../../common/img/c10.png) no-repeat center / contain;}
 
 
 
@@ -2103,12 +2117,12 @@ ul.keywords2 {
 }
 
 .bl_selectBlock_content{
-    width:calc( 100% - 15px );
+    width:calc( 100% - 0px );
     margin-bottom  20px;
     background  rgba(253, 23, 253 , .9);
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 20px 30px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 20px 15px;
 }
 
 .bl_selectBlock label{
@@ -2127,6 +2141,7 @@ ul.keywords2 {
     overflow: hidden;
     text-indent : 30px;
     letter-spacing:-0.03rem;
+    font-weight:bold;
 }
 .bl_selectBlock label:hover,.bl_selectBlock .bl_selectBlock_release:hover{
     background: rgb(239,243,245);
@@ -2301,7 +2316,8 @@ padding : 30px 2px;
 .release_table .tag0201 , .release_table .tag0202 , .release_table .tag0203 , .release_table .tag0204 , .release_table .tag0205 , .release_table .tag0206 , .release_table .tag0207 , .release_table .tag0208 , .release_table .tag0209 , .release_table .tag0210 ,
 .release_table .tag0301 , .release_table .tag0302 , .release_table .tag0303 , .release_table .tag0304 , .release_table .tag0305 , .release_table .tag0306 , .release_table .tag0307 , .release_table .tag0308 , .release_table .tag0309 , .release_table .tag0310 ,
 .release_table .tag0401 , .release_table .tag0402 , .release_table .tag0403 , .release_table .tag0404 , .release_table .tag0405 , .release_table .tag0406 , .release_table .tag0407 , .release_table .tag0408 , .release_table .tag0409 , .release_table .tag0410 ,
-.release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 
+.release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 ,
+.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 
 {
     display: inline-block;
     margin-right:8px;
@@ -2374,7 +2390,8 @@ padding : 30px 2px;
 .release_table .tag0201 , .release_table .tag0202 , .release_table .tag0203 , .release_table .tag0204 , .release_table .tag0205 , .release_table .tag0206 , .release_table .tag0207 , .release_table .tag0208 , .release_table .tag0209 , .release_table .tag0210 ,
 .release_table .tag0301 , .release_table .tag0302 , .release_table .tag0303 , .release_table .tag0304 , .release_table .tag0305 , .release_table .tag0306 , .release_table .tag0307 , .release_table .tag0308 , .release_table .tag0309 , .release_table .tag0310 ,
 .release_table .tag0401 , .release_table .tag0402 , .release_table .tag0403 , .release_table .tag0404 , .release_table .tag0405 , .release_table .tag0406 , .release_table .tag0407 , .release_table .tag0408 , .release_table .tag0409 , .release_table .tag0410 ,
-.release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 
+.release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 ,
+.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 
 {
   width :8.2rem;
   letter-spacing :0.3rem;
@@ -2396,6 +2413,8 @@ padding : 30px 2px;
 .release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 
 {  background:rgba(241, 237, 250, 1);  }/* Creative Works */
 
+.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 
+{  background:rgba(247, 247, 220, 1);  }/* Stay & Eexperience */
 
 
 .release_table .tag0102  {
@@ -2410,6 +2429,10 @@ padding : 30px 2px;
     letter-spacing : 0.2rem;
 }
 
+.release_table .tag0206  {
+    letter-spacing : -0.01rem;
+}
+
 .release_table .tag0301  {
     letter-spacing : 0.2rem;
 }
@@ -2422,10 +2445,10 @@ padding : 30px 2px;
     letter-spacing : -0.02rem;
 }
 
-.release_table .tag0401  {
-    letter-spacing : 0.15rem;
-}
 
+.release_table .tag0305  {
+    letter-spacing : -0.01rem;
+}
 
 
 /*
@@ -2445,7 +2468,7 @@ padding : 30px 2px;
 .release_table .tag0203 割烹 匠
 .release_table .tag0204 ハーモニーフーズ
 .release_table .tag0205 サウィ食堂
-.release_table .tag0206 
+.release_table .tag0206 高松三越ランドマーク
 .release_table .tag0207 
 .release_table .tag0208 
 .release_table .tag0209 
@@ -2454,9 +2477,9 @@ padding : 30px 2px;
 .release_table .tag0301 Passerelle
 .release_table .tag0302 Cafe de Ritsurin
 .release_table .tag0303 Maison de CIELetMER
-.release_table .tag0304 
-.release_table .tag0305 
-.release_table .tag0306 
+.release_table .tag0304 旧南原邸
+.release_table .tag0305 讃岐おもちゃ美術館 shop・cafe
+.release_table .tag0306 まおかふぇ
 .release_table .tag0307 
 .release_table .tag0308 
 .release_table .tag0309 
@@ -2483,6 +2506,17 @@ padding : 30px 2px;
 .release_table .tag0508 
 .release_table .tag0509 
 .release_table .tag0510 
+
+.release_table .tag0601 
+.release_table .tag0602 
+.release_table .tag0603 
+.release_table .tag0604 
+.release_table .tag0605 
+.release_table .tag0606 
+.release_table .tag0607 
+.release_table .tag0608 
+.release_table .tag0609 
+.release_table .tag0610 
 
 
 
