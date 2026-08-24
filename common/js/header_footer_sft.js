@@ -69,6 +69,7 @@ function header_a(){
               <div class="header_inner">\
                 <span class="p-megaMenu__list_title">About<span class="m_font">（企業情報）</span></span>\
                 <ul class="p-megaMenu__list">\
+                  <li class="p-megaMenu__list-item"><a href="/about/">企業情報</a></li>\
                   <li class="p-megaMenu__list-item"><a href="/about/message/">トップメッセージ</a></li>\
                   <li class="p-megaMenu__list-item"><a href="/about/outline/">会社概要</a></li>\
                   <li class="p-megaMenu__list-item"><a href="/about/history/">沿革</a></li>\
@@ -141,6 +142,7 @@ function header_b(){
               <details class="accordion">\
                 <summary>About</summary>\
                 <ul class="sub_list">\
+                  <li><a href="/about/">企業情報</a></li>\
                   <li><a href="/about/message/">トップメッセージ</a></li>\
                   <li><a href="/about/outline/">会社概要</a></li>\
                   <li><a href="/about/history/">沿革</a></li>\
@@ -167,10 +169,10 @@ function header_b(){
 }
 
 
-function footer_a(){
+function footer(){
     var html = "";
     html += '\
-    <!--js_footer_a-->\
+    <!--js_footer-->\
     <div class="footer_01 container">\
       <div id="f_site_map" class="f_site_map">\
         <hr class="gray print_none">\
@@ -211,6 +213,7 @@ function footer_a(){
               <dt>About</dt>\
               <dd>\
                 <ul>\
+                  <li><a href="/about/">企業情報</a></li>\
                   <li><a href="/about/message/">トップメッセージ</a></li>\
                   <li><a href="/about/outline/">会社概要</a></li>\
                   <li><a href="/about/history/">沿革</a></li>\
@@ -260,33 +263,19 @@ function footer_a(){
         </div><!--footer-share-->\
       </div><!--f_site_map-->\
     </div><!--footer_01-->\
-    <!--js_footer_a-->';
-    html += '';
-    document.write(html);
-}
-
-
-function footer_b(){
-    var html = "";
-    html += '\
-      <!--js_footer_b-->\
+    <div class="footer_02">\
       <hr class="gray print_none">\
       <ul class="link_area">\
         <li><a href="/">Home</a></li>\
         <li><a href="/sitemap/">サイトマップ</a></li>\
         <li><a href="/faq/">FAQ</a></li>\
         <li><a href="/contact/">お問い合わせ</a></li>\
+        <li><a href="/policy/privacy-policy/">プライバシーポリシー</a></li>\
+        <li><a href="/policy/site-policy/">サイトポリシー</a></li>\
+        <li><a href="/policy/social-media-policy/">ソーシャルメディアポリシー</a></li>\
+        <li><a href="/policy/web-accessibility/">ウェブアクセシビリティ対応</a></li>\
       </ul>\
-      <!--js_footer_b-->';
-    html += '';
-    document.write(html);
-}
-
-
-function footer_c(){
-    var html = "";
-    html += '\
-    <!--js_footer_c-->\
+    </div><!--footer_02-->\
     <div class="copyright"><p><span lang="en">&copy; 2026-<script>document.write(new Date().getFullYear());</script> SETOLAS Foodtech Co.,Ltd.</span></p></div>\
     <div class="return">\
       <a href="#page-top">\
@@ -295,12 +284,10 @@ function footer_c(){
         </div>\
       </a>\
     </div>\
-    <!--js_footer_c-->';
+    <!--js_footer-->';
     html += '';
     document.write(html);
 }
-
-
 
 
 function logo_name(){
@@ -310,7 +297,7 @@ function logo_name(){
           <!--div>\
             <a href="https://setonasft.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
-                <img src="/common/img/setona/logo.png" alt="瀬to菜" width="320" height="125">\
+                <img src="/common/img/setona/logo.png" alt="瀬to菜 ロゴ" width="320" height="125">\
               </div>\
               <span>創作和食 瀬to菜<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
@@ -318,9 +305,17 @@ function logo_name(){
           <div>\
             <a href="https://takumisft.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
-                <img src="/common/img/takumi/logo.png" alt="匠" width="320" height="320">\
+                <img src="/common/img/takumi/logo.png" alt="匠 ロゴ" width="320" height="320">\
               </div>\
               <span>割烹 匠<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+            </a>\
+          </div>\
+          <div>\
+            <a href="https://www.mitsukoshi.mistore.jp/takamatsu/shops/restaurant/landmark.html" target="_blank" rel="noopener">\
+              <div class="logo_name-child">\
+                <img src="/common/img/landmark/logo.png" alt="landmark ロゴ" width="320" height="77">\
+              </div>\
+              <span>高松三越ランドマーク<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
           <div>\
@@ -345,6 +340,30 @@ function logo_name(){
                 <img src="/common/img/harmony-foods/logo.png" alt="ハーモニーフーズ ロゴ" width="320" height="118">\
               </div>\
               <span>ハーモニーフーズ<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+            </a>\
+          </div>\
+          <div>\
+            <a href="https://www.ikunas.com/view/page/stm" target="_blank" rel="noopener">\
+              <div class="logo_name-child">\
+                <img src="/common/img/sanuki-toy-museum/logo.png" alt="讃岐おもちゃ美術館 shop・cafe ロゴ" width="320" height="35">\
+              </div>\
+              <span>讃岐おもちゃ美術館 shop・cafe<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+            </a>\
+          </div>\
+          <div>\
+            <a href="https://9nanbaratei.com/" target="_blank" rel="noopener">\
+              <div class="logo_name-child">\
+                <img src="/common/img/kyu-nanbaratei/logo.png" alt="旧南原邸 ロゴ" width="300" height="212">\
+              </div>\
+              <span>旧南原邸<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+            </a>\
+          </div>\
+          <div>\
+            <a href="https://zentsuji.com/shukubou/mamocafe/" target="_blank" rel="noopener">\
+              <div class="logo_name-child">\
+                <img src="/common/img/maocafe/logo.png" alt="まおかふぇ ロゴ" width="320" height="51">\
+              </div>\
+              <span>まおかふぇ<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
           <div>\
