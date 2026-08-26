@@ -2297,7 +2297,7 @@ padding:30px 10px;
     background   #ee9afc;
 }
 .release_table tbody tr td:nth-child(2) {
-    width  : 16rem;
+    width  : 18.5rem;
 padding-top : 27px;
     max-width  190px;
     background  #d99afc;
@@ -2369,7 +2369,7 @@ padding : 30px 2px;
 .release_table .tag_f ,
 .release_table .tag_g ,
 .release_table .tag_h {
-    width :4.8rem;
+    width :6.0rem;
     letter-spacing:0.2rem;
 }
 
@@ -2420,7 +2420,7 @@ padding : 30px 2px;
 .release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 ,
 .release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 
 {
-  width :8.2rem;
+  width :9.4rem;
   letter-spacing :0.3rem;
 }
 
