@@ -268,7 +268,7 @@ function footer(){
       <ul class="link_area">\
         <li><a href="/">Home</a></li>\
         <li><a href="/sitemap/">サイトマップ</a></li>\
-        <li><a href="/faq/">FAQ</a></li>\
+        <!--li><a href="/faq/">FAQ</a></li-->\
         <li><a href="/contact/">お問い合わせ</a></li>\
         <li><a href="/policy/privacy-policy/">プライバシーポリシー</a></li>\
         <li><a href="/policy/site-policy/">サイトポリシー</a></li>\
