@@ -739,19 +739,19 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // データ
 // -------------------------
 var locations = [
-  [34.345076,134.047506, "創作和食 瀬to菜", "japanese-restaurant", "/brands/food_and_dining/#setona"],
-  [34.344883,134.051239, "割烹 匠", "japanese-restaurant", "/brands/food_and_dining/#takumi"],
-  [34.346642,134.050781, "高松三越ランドマーク", "restaurant", "/brands/food_and_dining/#landmark"],
-  [34.307522,133.809052, "バーガーキング® イオンタウン宇多津", "fast-food", "/brands/food_and_dining/#burger-king"],
-  [34.350414,134.047607, "バーガーキング® 高松オルネ", "fast-food", "/brands/food_and_dining/#burger-king"],
-  [34.603951,133.761246, "バーガーキング® アリオ倉敷", "fast-food", "/brands/food_and_dining/#burger-king"],
-  [34.343304,134.049057, "サウィ食堂 高松店", "korean-restaurant", "/brands/food_and_dining/#sawee-syokudou"],
-  [34.345103,134.05087, "讃岐おもちゃ美術館 shop・cafe", "cafe", "/brands/cafe_and_sweets/#sanuki-toy-museum"],
-  [34.372085,133.942311, "旧南原邸", "cafe", "/brands/cafe_and_sweets/#kyu-nanbaratei"],
-  [34.224956,133.77489, "まおかふぇ", "cafe", "/brands/cafe_and_sweets/#maocafe"],
-  [34.328655,134.041946, "Cafe de Ritsuin（カフェ・ド・リツリン）", "cafe", "/brands/cafe_and_sweets/#cafe-de-ritsurin"],
-  [34.350414,134.047607, "Passerelle（パスレル）", "sweets", "/brands/cafe_and_sweets/#passerelle"],
-  [34.346642,134.050781, "Maison de CIELetMER（メゾン・ド・シエルエメア）", "sweets", "/brands/cafe_and_sweets/#maison-de-cleletmer"]
+  [34.345076,134.047506, "創作和食 瀬to菜", "japanese-restaurant", "/brands/dining/#setona"],
+  [34.344883,134.051239, "割烹 匠", "japanese-restaurant", "/brands/dining/#takumi"],
+  [34.346642,134.050781, "高松三越ランドマーク", "restaurant", "/brands/dining/#landmark"],
+  [34.307522,133.809052, "バーガーキング® イオンタウン宇多津", ""],
+  [34.350414,134.047607, "バーガーキング® 高松オルネ", "fast-food", ""],
+  [34.603951,133.761246, "バーガーキング® アリオ倉敷", "fast-food", ""],
+  [34.343304,134.049057, "サウィ食堂 高松店", "korean-restaurant", ""],
+  [34.345103,134.05087, "讃岐おもちゃ美術館 cafe", "cafe", "/brands/cafe/#sanuki-toy-museum"],
+  [34.372085,133.942311, "旧南原邸", "cafe", "/brands/cafe/#kyu-nanbaratei"],
+  [34.224956,133.77489, "まおかふぇ", "cafe", "/brands/cafe/#maocafe"],
+  [34.328655,134.041946, "Cafe de Ritsuin（カフェ・ド・リツリン）", "cafe", "/brands/cafe/#cafe-de-ritsurin"],
+  [34.350414,134.047607, "Passerelle（パスレル）", "sweets", "/brands/sweets/#passerelle"],
+  [34.346642,134.050781, "Maison de CIELetMER（メゾン・ド・シエルエメア）", "sweets", "/brands/sweets/#maison-de-cleletmer"]
 ];
 
 // -------------------------
@@ -824,7 +824,9 @@ if (shopList) {
       icon: getColorIcon(loc[3])
     })
     .addTo(mapShop)
-    .bindPopup('<b>' + loc[2] + '</b><br><a href="' + loc[4] + '">詳細を見る</a>');
+    .bindPopup(
+  '<b>' + loc[2] + '</b>' +(loc[4]  ? '<br><a href="' + loc[4] + '">詳細を見る</a>' : ''));
+
 
     markers.push(marker);
 

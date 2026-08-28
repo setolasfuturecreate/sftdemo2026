@@ -42,10 +42,10 @@ function header_a(){
                 <span class="p-megaMenu__list_title">Brands<span class="m_font">（ブランド）</span></span>\
                 <ul class="p-megaMenu__list">\
                   <li class="p-megaMenu__list-item"><a href="/brands/">カテゴリ、ブランド一覧</a></li>\
-                  <li class="p-megaMenu__list-item"><a href="/brands/food_and_dining/">Food &amp; Dining<span class="s_font">（食事、レストラン）</span></a></li>\
-                  <li class="p-megaMenu__list-item"><a href="/brands/cafe_and_sweets/">Cafe &amp; Sweets<span class="s_font">（カフェ、スイーツ）</span></a></li>\
-                  <li class="p-megaMenu__list-item"><a href="/brands/local_food_and_crafts/">Local Food &amp; Crafts<span class="s_font">（特産品、工芸品）</span></a></li>\
-                  <li class="p-megaMenu__list-item"><a href="/brands/creative_works/">Creative Works<span class="s_font">（デザイン、企画）</span></a></li>\
+                  <li class="p-megaMenu__list-item"><a href="/brands/dining/">Dining<span class="s_font">（食事、レストラン）</span></a></li>\
+                  <li class="p-megaMenu__list-item"><a href="/brands/cafe/">Cafe<span class="s_font">（カフェ）</span></a></li>\
+                  <li class="p-megaMenu__list-item"><a href="/brands/sweets/">Sweets<span class="s_font">（スイーツ）</span></a></li>\
+                  <li class="p-megaMenu__list-item"><a href="/brands/local_specialties/">Local Specialties<span class="s_font">（特産品）</span></a></li>\
                 </ul>\
               </div>\
               <p><span class="p-megaMenu__close">close</span></p>\
@@ -72,8 +72,8 @@ function header_a(){
                   <li class="p-megaMenu__list-item"><a href="/about/">企業情報</a></li>\
                   <li class="p-megaMenu__list-item"><a href="/about/message/">トップメッセージ</a></li>\
                   <li class="p-megaMenu__list-item"><a href="/about/outline/">会社概要</a></li>\
-                  <li class="p-megaMenu__list-item"><a href="/about/history/">沿革</a></li>\
-                  <li class="p-megaMenu__list-item"><a href="/about/group/">グループ会社</a></li>\
+                  <!--li class="p-megaMenu__list-item"><a href="/about/history/">沿革</a></li>\
+                  <li class="p-megaMenu__list-item"><a href="/about/group/">グループ会社</a></li-->\
                 </ul>\
               </div>\
               <p><span class="p-megaMenu__close">close</span></p>\
@@ -113,7 +113,7 @@ function header_b(){
             <!-- 検索フォーム -->\
             <div class="search-inner">\
               <form action="/search/" method="get" class="search-form">\
-                <input type="text"  name="q"  placeholder="サイト内検索" class="search-input">\
+                <input type="text" name="q"  placeholder="サイト内検索" class="search-input">\
                 <button type="submit" class="search-button" accesskey="s" tabindex="0">検索</button>\
               </form>\
             </div>\
@@ -127,10 +127,10 @@ function header_b(){
                 <summary>Brands</summary>\
                 <ul class="sub_list">\
                   <li><a href="/brands/">カテゴリ、ブランド一覧</a></li>\
-                  <li><a href="/brands/food_and_dining/">Food &amp; Dining<span class="s_font">（食事、レストラン）</span></a></li>\
-                  <li><a href="/brands/cafe_and_sweets/">Cafe &amp; Sweets<span class="s_font">（カフェ、スイーツ）</span></a></li>\
-                  <li><a href="/brands/local_food_and_crafts/">Local Food &amp; Crafts<span class="s_font">（特産品、工芸品）</span></a></li>\
-                  <li><a href="/brands/creative_works/">Creative Works<span class="s_font">（デザイン、企画）</span></a></li>\
+                  <li><a href="/brands/dining/">Dining<span class="s_font">（食事、レストラン）</span></a></li>\
+                  <li><a href="/brands/cafe/">Cafe<span class="s_font">（カフェ）</span></a></li>\
+                  <li><a href="/brands/sweets/">Sweets<span class="s_font">（スイーツ）</span></a></li>\
+                  <li><a href="/brands/local_specialties/">Local Specialties<span class="s_font">（特産品）</span></a></li>\
                 </ul>\
               </details>\
               <details class="accordion">\
@@ -145,8 +145,8 @@ function header_b(){
                   <li><a href="/about/">企業情報</a></li>\
                   <li><a href="/about/message/">トップメッセージ</a></li>\
                   <li><a href="/about/outline/">会社概要</a></li>\
-                  <li><a href="/about/history/">沿革</a></li>\
-                  <li><a href="/about/group/">グループ会社</a></li>\
+                  <!--li><a href="/about/history/">沿革</a></li>\
+                  <li><a href="/about/group/">グループ会社</a></li-->\
                 </ul>\
               </details>\
               <details class="accordion">\
@@ -190,10 +190,10 @@ function footer(){
               <dd>\
                 <ul class="letter_0">\
                   <li><a href="/brands/">カテゴリ、ブランド一覧</a></li>\
-                  <li><a href="/brands/food_and_dining/">Food &amp; Dining<span class="s_font none720">（食事、レストラン）</span></a></li>\
-                  <li><a href="/brands/cafe_and_sweets/">Cafe &amp; Sweets<span class="s_font none720">（カフェ、スイーツ）</span></a></li>\
-                  <li><a href="/brands/local_food_and_crafts/">Local Food &amp; Crafts<span class="s_font none720">（特産品、工芸品）</span></a></li>\
-                  <li><a href="/brands/creative_works/">Creative Works<span class="s_font none720">（デザイン、企画）</span></a></li>\
+                  <li><a href="/brands/dining/">Dining<span class="s_font none720">（食事、レストラン）</span></a></li>\
+                  <li><a href="/brands/cafe/">Cafe<span class="s_font none720">（カフェ）</span></a></li>\
+                  <li><a href="/brands/sweets/">CSweets<span class="s_font none720">（スイーツ）</span></a></li>\
+                  <li><a href="/brands/local_specialties/">Local Specialties<span class="s_font none720">（特産品）</span></a></li>\
                 </ul>\
               </dd>\
             </dl>\
@@ -216,8 +216,8 @@ function footer(){
                   <li><a href="/about/">企業情報</a></li>\
                   <li><a href="/about/message/">トップメッセージ</a></li>\
                   <li><a href="/about/outline/">会社概要</a></li>\
-                  <li><a href="/about/history/">沿革</a></li>\
-                  <li><a href="/about/group/">グループ会社</a></li>\
+                  <!--li><a href="/about/history/">沿革</a></li>\
+                  <li><a href="/about/group/">グループ会社</a></li-->\
                 </ul>\
               </dd>\
             </dl>\
@@ -318,22 +318,22 @@ function logo_name(){
               <span>高松三越ランドマーク<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
-          <div>\
+          <!--div>\
             <a href="https://www.burgerking.co.jp/home" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
                 <img src="/common/img/burger-king/logo.png" alt="バーガーキング ロゴ" width="320" height="39">\
               </div>\
               <span>バーガーキング&#174;<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
-          </div>\
-          <div>\
+          </div-->\
+          <!--div>\
             <a href="https://www.sawee-japan.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
                 <img src="/common/img/sawee-syokudou/logo.png" alt="サウィ食堂 ロゴ" width="320" height="320">\
               </div>\
               <span>サウィ食堂<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
-          </div>\
+          </div-->\
           <div>\
             <a href="https://harmonyfoods.jp/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
@@ -345,9 +345,9 @@ function logo_name(){
           <div>\
             <a href="https://www.ikunas.com/view/page/stm" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
-                <img src="/common/img/sanuki-toy-museum/logo.png" alt="讃岐おもちゃ美術館 shop・cafe ロゴ" width="320" height="35">\
+                <img src="/common/img/sanuki-toy-museum/logo.png" alt="讃岐おもちゃ美術館 cafe ロゴ" width="320" height="35">\
               </div>\
-              <span>讃岐おもちゃ美術館 shop・cafe<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+              <span>讃岐おもちゃ美術館 cafe<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
           <div>\
@@ -390,14 +390,14 @@ function logo_name(){
               <span>Maison de CIELetMER（メゾン・ド・シエルエメア）<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
-          <div>\
+          <!--div>\
             <a href="https://shikoku-arcade.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
                 <img src="/common/img/shikoku-arcade/logo.png" alt="しこくあーけーど ロゴ" width="320" height="220">\
               </div>\
               <span>しこくあーけーど&#174;<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
-          </div>\
+          </div-->\
           <div>\
             <a href="https://aonodia.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
@@ -414,14 +414,14 @@ function logo_name(){
               <span>大西食品<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
-          <div>\
+          <!--div>\
             <a href="https://www.tao-works.jp/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
                 <img src="/common/img/tao/logo.png" alt="tao ロゴ" width="320" height="135">\
               </div>\
               <span>tao.<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
-          </div>\
+          </div-->\
           <!--div>\
             <a href="https://www.ikunas.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
