@@ -59,18 +59,32 @@
 
 
 .hero-text h1 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 0px;
     text-align: center;
     font-family: serif;
+      font-weight bold;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;       /* 対応してる環境なら効く */
+  overflow: hidden;
+
 }
 
 .hero-text p {
     font-family: serif;
+  font-size  1.2rem;
+  font-weight bold;
+ 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;       /* 対応してる環境なら効く */
+  overflow: hidden;
+ 
 }
-
-
-
 
 
 
@@ -119,10 +133,10 @@ h2#slide {
     .slide-caption {
       position: absolute;
       left: 0; right: 0; bottom: 0px;
-      padding: 40px 16px;
+      padding: 24px 16px;
       color: rgb(255,255,255);
       background: linear-gradient(transparent, rgba(0,0,0,.65));
-      font-size :  0.9rem;
+      font-size  :  0.9rem;
       text-align: center;
       line-height: 1.5;
       font-family: serif;
@@ -136,6 +150,7 @@ h2#slide {
     transform 0.75s ease-out;
 
   transition-delay: 0.05s;
+    font-weight bold;
     }
 
 .splide__slide.is-active .slide-caption {
@@ -191,6 +206,14 @@ h2#slide {
       height : 100%;
 }
 
+.hero-text h1 {
+  font-size : 1.6rem;
+  padding:0 50px;
+}
+.hero-text p {
+    font-size  0.9rem;
+}
+
 }
 
 
@@ -210,6 +233,7 @@ h2#slide {
 }
 .hero-text p {
   padding:0 50px;
+    font-size  0.8rem;
 }
 
 }
@@ -2297,12 +2321,13 @@ padding:30px 10px;
     background   #ee9afc;
 }
 .release_table tbody tr td:nth-child(2) {
-    width  : 18.5rem;
+    width    18.5rem;
 padding-top : 27px;
     max-width  190px;
     background  #d99afc;
 }
 .release_table tbody tr td:nth-child(3) {
+    width :60%;
 padding : 30px 2px;
 }
 .release_table thead {
@@ -2348,6 +2373,7 @@ padding : 30px 2px;
 {
     display: inline-block;
     margin-right:8px;
+    margin-bottom:5px;
     padding : 3px 0px;
   border 1px solid rgb(180, 180, 180);
     font-size:0.8rem;
@@ -2481,6 +2507,38 @@ padding : 30px 2px;
     letter-spacing : -0.0rem;
 }
 
+
+
+
+@media screen and (max-width:300px) {
+.release_table .tag_a ,
+.release_table .tag_b ,
+.release_table .tag_c ,
+.release_table .tag_d ,
+.release_table .tag_e ,
+.release_table .tag_f ,
+.release_table .tag_g ,
+.release_table .tag_h ,
+.release_table .tag0101 , .release_table .tag0102 , .release_table .tag0103 , .release_table .tag0104 , .release_table .tag0105 , .release_table .tag0106 , .release_table .tag0107 , .release_table .tag0108 , .release_table .tag0109 , .release_table .tag0110 ,
+.release_table .tag0201 , .release_table .tag0202 , .release_table .tag0203 , .release_table .tag0204 , .release_table .tag0205 , .release_table .tag0206 , .release_table .tag0207 , .release_table .tag0208 , .release_table .tag0209 , .release_table .tag0210 ,
+.release_table .tag0301 , .release_table .tag0302 , .release_table .tag0303 , .release_table .tag0304 , .release_table .tag0305 , .release_table .tag0306 , .release_table .tag0307 , .release_table .tag0308 , .release_table .tag0309 , .release_table .tag0310 ,
+.release_table .tag0401 , .release_table .tag0402 , .release_table .tag0403 , .release_table .tag0404 , .release_table .tag0405 , .release_table .tag0406 , .release_table .tag0407 , .release_table .tag0408 , .release_table .tag0409 , .release_table .tag0410 ,
+.release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 ,
+.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 
+{
+  letter-spacing : -0.01rem;
+  width :auto;
+  padding :3px 5px;
+  text-indent:0;
+
+}
+}
+
+
+
+
+
+
 /*
 .release_table .tag0101 フードテック
 .release_table .tag0102 フューチャークリエイト
@@ -2580,10 +2638,11 @@ padding : 30px 2px;
 	}
 .release_table tbody tr td:nth-child(2) {
 padding-top : 5px;
-		width: 100% !important;
+
 
 }
 	.release_table tr td:nth-child(3) {
+		width: 100% !important;	
 		padding:0px 5px ;
 		  border-top 1px dashed rgb(212, 212, 212);		
 		width  100%;

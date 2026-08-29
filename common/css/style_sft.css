@@ -1945,8 +1945,9 @@ dl.dl_flex.dt3 dd , dl.dl_flex.dt4 dd , dl.dl_flex.dt5 dd , dl.dl_flex.dt6 dd , 
   position: fixed;
   top: 0;
   width: 100%;
-  height:6rem;
-  min-height:120px;
+  height 6rem;
+  height:120px;
+  min-height 120px;
   margin :0;
   padding: 0;
   background-color: rgba(255,255,255,.98);
@@ -1959,7 +1960,7 @@ dl.dl_flex.dt3 dd , dl.dl_flex.dt4 dd , dl.dl_flex.dt5 dd , dl.dl_flex.dt6 dd , 
   width calc(100% - 20px);
   width:calc(100% - 100px);
   max-width:1400px;
-  margin :0.5rem auto 0 auto;
+  margin :8px auto 0 auto;
 }
 
 @media print{
@@ -1988,7 +1989,8 @@ padding :5px;
 .l-header {
   display: block;
   border-bottom :none;
-  min-height:100px;
+  height:100px;
+  min-height 100px;
 }
 
 .header_inner{
