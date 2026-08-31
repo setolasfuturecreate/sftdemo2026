@@ -84,7 +84,12 @@ $(window).scroll(function (){
 });
 
 
-
+window.addEventListener('load', () => {
+  if (location.hash) {
+    const target = document.querySelector(location.hash);
+    target?.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }
+});
 
 
 //ルートパス開発環境---------------------------------------------------------------------
