@@ -1476,7 +1476,7 @@ ul.brand-card {
 /* ---------------- */
 
 .brand-map button {
-  margin: 0px;
+  margin: 5px 0;
   padding: 8px 12px;
   background: #eee;
   border: none;
@@ -1486,7 +1486,19 @@ ul.brand-card {
   border: 1px solid rgb(216,222,230);
   font-size:0.9rem;
   letter-spacing:0;
+
+
+
+
+
 }
+
+.brand-map button:last-child{
+margin-bottom:10px;
+}
+
+
+
 
 .brand-map button:hover {
   background: rgba(0,140,207,1);
@@ -1502,7 +1514,7 @@ ul.brand-card {
 .auto-map .list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
 }
 
 .auto-map .list-item {
