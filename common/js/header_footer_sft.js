@@ -45,7 +45,10 @@ function header_a(){
                   <li class="p-megaMenu__list-item"><a href="/brands/dining/">Dining<span class="s_font">（食事、レストラン）</span></a></li>\
                   <li class="p-megaMenu__list-item"><a href="/brands/cafe/">Cafe<span class="s_font">（カフェ）</span></a></li>\
                   <li class="p-megaMenu__list-item"><a href="/brands/sweets/">Sweets<span class="s_font">（スイーツ）</span></a></li>\
+                  <li class="p-megaMenu__list-item"><a href="/brands/franchise/">Franchise<span class="s_font">（フランチャイズ）</span></a></li>\
+                  <li class="p-megaMenu__list-item"><a href="/brands/food_service/">Food Service<span class="s_font">（弁当、社員食堂）</span></a></li>\
                   <li class="p-megaMenu__list-item"><a href="/brands/local_specialties/">Local Specialties<span class="s_font">（特産品）</span></a></li>\
+                  <!--li class="p-megaMenu__list-item"><a href="/brands/creative/">Creative<span class="s_font">（クリエイティブ）</span></a></li-->\
                 </ul>\
               </div>\
               <p><span class="p-megaMenu__close">close</span></p>\
@@ -130,7 +133,10 @@ function header_b(){
                   <li><a href="/brands/dining/">Dining<span class="s_font">（食事、レストラン）</span></a></li>\
                   <li><a href="/brands/cafe/">Cafe<span class="s_font">（カフェ）</span></a></li>\
                   <li><a href="/brands/sweets/">Sweets<span class="s_font">（スイーツ）</span></a></li>\
+                  <li><a href="/brands/franchise/">Franchise<span class="s_font">（フランチャイズ）</span></a></li>\
+                  <li><a href="/brands/food_service/">Food Service<span class="s_font">（弁当、社員食堂）</span></a></li>\
                   <li><a href="/brands/local_specialties/">Local Specialties<span class="s_font">（特産品）</span></a></li>\
+                  <!--li><a href="/brands/creative/">Creative<span class="s_font">（クリエイティブ）</span></a></li-->\
                 </ul>\
               </details>\
               <details class="accordion">\
@@ -192,9 +198,12 @@ function footer(){
                   <li><a href="/brands/">カテゴリ、ブランド一覧</a></li>\
                   <li><a href="/brands/dining/">Dining<span class="s_font none720">（食事、レストラン）</span></a></li>\
                   <li><a href="/brands/cafe/">Cafe<span class="s_font none720">（カフェ）</span></a></li>\
-                  <li><a href="/brands/sweets/">CSweets<span class="s_font none720">（スイーツ）</span></a></li>\
+                  <li><a href="/brands/sweets/">Sweets<span class="s_font none720">（スイーツ）</span></a></li>\
+                  <li><a href="/brands/franchise/">Franchise<span class="s_font none720">（フランチャイズ）</span></a></li>\
+                  <li><a href="/brands/food_service/">Food Service<span class="s_font none720">（弁当、社員食堂）</span></a></li>\
                   <li><a href="/brands/local_specialties/">Local Specialties<span class="s_font none720">（特産品）</span></a></li>\
-                </ul>\
+                  <!--li><a href="/brands/creative/">Creative<span class="s_font none720">（クリエイティブ）</span></a></li-->\
+               </ul>\
               </dd>\
             </dl>\
           </div><!--f_box-->\
@@ -216,8 +225,8 @@ function footer(){
                   <li><a href="/about/">企業情報</a></li>\
                   <li><a href="/about/message/">トップメッセージ</a></li>\
                   <li><a href="/about/outline/">会社概要</a></li>\
-                  <!--li><a href="/about/history/">沿革</a></li>\
-                  <li><a href="/about/group/">グループ会社</a></li-->\
+                  <li><a href="/about/history/">沿革</a></li>\
+                  <li><a href="/about/group/">グループ会社</a></li>\
                 </ul>\
               </dd>\
             </dl>\
@@ -268,7 +277,7 @@ function footer(){
       <ul class="link_area">\
         <li><a href="/">Home</a></li>\
         <li><a href="/sitemap/">サイトマップ</a></li>\
-        <!--li><a href="/faq/">FAQ</a></li-->\
+        <li><a href="/faq/">FAQ</a></li>\
         <li><a href="/contact/">お問い合わせ</a></li>\
         <li><a href="/policy/privacy-policy/">プライバシーポリシー</a></li>\
         <li><a href="/policy/site-policy/">サイトポリシー</a></li>\
@@ -316,30 +325,6 @@ function logo_name(){
                 <img src="/common/img/landmark/logo.png" alt="landmark ロゴ" width="320" height="77">\
               </div>\
               <span>高松三越ランドマーク<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
-            </a>\
-          </div>\
-          <!--div>\
-            <a href="https://www.burgerking.co.jp/home" target="_blank" rel="noopener">\
-              <div class="logo_name-child">\
-                <img src="/common/img/burger-king/logo.png" alt="バーガーキング ロゴ" width="320" height="39">\
-              </div>\
-              <span>バーガーキング&#174;<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
-            </a>\
-          </div-->\
-          <!--div>\
-            <a href="https://www.sawee-japan.com/" target="_blank" rel="noopener">\
-              <div class="logo_name-child">\
-                <img src="/common/img/sawee-syokudou/logo.png" alt="サウィ食堂 ロゴ" width="320" height="320">\
-              </div>\
-              <span>サウィ食堂<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
-            </a>\
-          </div-->\
-          <div>\
-            <a href="https://harmonyfoods.jp/" target="_blank" rel="noopener">\
-              <div class="logo_name-child">\
-                <img src="/common/img/harmony-foods/logo.png" alt="ハーモニーフーズ ロゴ" width="320" height="118">\
-              </div>\
-              <span>ハーモニーフーズ<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
           <div>\
@@ -390,14 +375,38 @@ function logo_name(){
               <span>Maison de CIELetMER（メゾン・ド・シエルエメア）<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
-          <!--div>\
+          <div>\
+            <a href="https://www.burgerking.co.jp/home" target="_blank" rel="noopener">\
+              <div class="logo_name-child">\
+                <img src="/common/img/burger-king/logo.png" alt="バーガーキング ロゴ" width="320" height="39">\
+              </div>\
+              <span>バーガーキング&#174;<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+            </a>\
+          </div>\
+          <div>\
+            <a href="https://www.sawee-japan.com/" target="_blank" rel="noopener">\
+              <div class="logo_name-child">\
+                <img src="/common/img/sawee-syokudou/logo.png" alt="サウィ食堂 ロゴ" width="320" height="320">\
+              </div>\
+              <span>サウィ食堂<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+            </a>\
+          </div>\
+          <div>\
+            <a href="https://harmonyfoods.jp/" target="_blank" rel="noopener">\
+              <div class="logo_name-child">\
+                <img src="/common/img/harmony-foods/logo.png" alt="ハーモニーフーズ ロゴ" width="320" height="118">\
+              </div>\
+              <span>ハーモニーフーズ<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+            </a>\
+          </div>\
+          <div>\
             <a href="https://shikoku-arcade.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
                 <img src="/common/img/shikoku-arcade/logo.png" alt="しこくあーけーど ロゴ" width="320" height="220">\
               </div>\
               <span>しこくあーけーど&#174;<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
-          </div-->\
+          </div>\
           <div>\
             <a href="https://aonodia.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
@@ -421,8 +430,8 @@ function logo_name(){
               </div>\
               <span>tao.<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
-          </div-->\
-          <!--div>\
+          </div>\
+          <div>\
             <a href="https://www.ikunas.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
                 <img src="/common/img/tao/logo_ikunas.png" alt="イクナス ロゴ" width="320" height="36">\
