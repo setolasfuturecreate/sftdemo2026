@@ -2302,7 +2302,7 @@ background-color:rgba(255, 255, 255, .7);
 display:block;
 float:left;
 width : calc(((100% - 0px )/ 4)* 1);
-  margin: 35px auto;
+  margin: 10px auto;
   font-size:1.6rem;
   font-family : 'Libre Baskerville', serif;
   letter-spacing :0.3rem;
@@ -2321,7 +2321,7 @@ display:inline-block;
   width : calc(((100% - 0px )/ 4)* 3);
   max-width 1400px;  
   margin-inline: auto;
-  margin: 20px auto;
+  margin: 0px auto;
   text-align: left;
 
 }
@@ -2333,7 +2333,7 @@ display:inline-block;
 .p-megaMenu__list-item a {
   display: inline-flex;
   align-items: center;
-margin :10px ;
+margin :5px ;
   padding: 15px !important;
   font-weight:bold;
     font-size: 1.2rem;
@@ -2912,7 +2912,7 @@ grid-template-columns:repeat(3,minmax(0,1fr));
   display : block;
   margin 5px 0 !important;
   display : inline-block;
-margin:5px 50px 5px 0;
+margin:5px 40px 5px 0;
 }
 
 .footer_01 .f_site_map dl dd ul li a{
