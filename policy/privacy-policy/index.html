@@ -34,6 +34,16 @@
   <noscript><link rel="stylesheet" href="/common/css/noscript_sft.css"></noscript>
   <!-- page_style_area_beginning -->
   <style>body{visibility:hidden;} #loading{visibility:visible;}</style>
+  <style>
+  ol.kakko li {
+  list-style-type: none;
+  counter-increment: cnt;
+  margin-left:15px;
+  }
+  ol.kakko li::before {
+  content: "（"counter(cnt)"）";
+  }
+  </style>
   <!-- page_style_area_end -->
 </head>
 
@@ -97,14 +107,14 @@
           <ul class="link_ul_d row_f">
             <li><a href="#section_01">基本方針</a></li>
             <li><a href="#section_02">適用範囲</a></li>
-            <li><a href="#section_03">取得する情報</a></li>
-            <li><a href="#section_04">Cookie、アクセス解析の利用</a></li>
-            <li><a href="#section_05">個人情報の利用目的</a></li>
-            <li><a href="#section_06">第三者提供</a></li>
-            <li><a href="#section_07">グループ会社との共同利用</a></li>
-            <li><a href="#section_08">安全管理措置</a></li>
-            <li><a href="#section_09">開示、訂正、利用停止等の請求</a></li>
-            <li><a href="#section_10">本ポリシーの改定</a></li>
+            <li><a href="#section_03">取得する個人情報</a></li>
+            <li><a href="#section_04">個人情報の利用目的</a></li>
+            <li><a href="#section_05">第三者提供</a></li>
+            <li><a href="#section_06">グループ会社との共同利用</a></li>
+            <li><a href="#section_07">安全管理措置</a></li>
+            <li><a href="#section_08">開示、訂正、利用停止等</a></li>
+            <li><a href="#section_09">Cookie等の利用</a></li>
+            <li><a href="#section_10">改定</a></li>
             <li><a href="#section_11">お問い合わせ</a></li>
           </ul>
         </div>
@@ -119,7 +129,7 @@
         <h2 class="title js-count">適用範囲</h2>
         <p>本ポリシーは、当社が運営または管理する以下のサービスに適用されます。</p>
         <ul class="default">
-          <li>当社公式ウェブサイト、ECサイト</li>
+          <li>当社公式ウェブサイト</li>
           <li>当社直営の飲食店舗</li>
           <li>当社が受託運営する公共施設、委託事業</li>
           <li>当社が取得する採用応募者情報</li>
@@ -128,76 +138,95 @@
       </section>
 
       <section id="section_03" class="section_mini template">
-        <h2 class="title js-count">取得する情報</h2>
+        <h2 class="title js-count">取得する個人情報</h2>
         <p>当社は業務上必要な範囲で、以下の情報を取得する場合があります。</p>
-        <ul class="default">
-          <li>氏名、住所、電話番号、メールアドレス</li>
+        <ol class="kakko">
+          <!--li>氏名、住所、電話番号、メールアドレス</li>
           <li>商品購入、予約、問い合わせに関する情報</li>
           <li>決済、配送に必要な情報</li>
           <li>アンケート、キャンペーン応募情報</li>
           <li>採用応募に伴う情報</li>
-          <li>クッキー（Cookie）、アクセスログ、端末情報</li>
-        </ul>
+          <li>クッキー（Cookie）、アクセスログ、端末情報</li-->
+          <li>お問い合わせの際にご提供いただく情報<br>氏名、会社名、所属部署、役職、メールアドレス、電話番号、お問い合わせ内容その他ご提供いただく情報</li>
+          <li>採用応募の際にご提供いただく情報<br>氏名、生年月日、住所、電話番号、メールアドレス、職務経歴その他採用選考に必要な情報</li>
+          <li>当社とのお取引に関連して取得する情報<br>氏名、会社名、所属部署、役職、連絡先その他取引に必要な情報</li>
+          <li>当社ウェブサイトの利用に伴い取得する情報<br>IPアドレス、Cookie情報、アクセスログその他当社ウェブサイトの利用状況に関する情報</li>
+        </ol>
       </section>
 
       <section id="section_04" class="section_mini template">
-        <h2 class="title js-count">Cookie、アクセス解析の利用</h2>
-        <p>当社は、以下を目的としてCookieを使用します。</p>
-        <ul class="default">
-          <li>利便性向上（ログイン保持、閲覧履歴の最適化等）</li>
-          <li>サイト利用状況の分析（例：Microsoft Clarity等）</li>
-          <li>コンテンツ改善のための統計処理</li>
-        </ul>
-        <p>※ 個人が特定される情報は含まず、ブラウザの設定等により拒否できます。</p>
-      </section>
-
-      <section id="section_05" class="section_mini template">
         <h2 class="title js-count">個人情報の利用目的</h2>
-        <p>取得した情報は以下の目的範囲で利用します。</p>
-        <ul class="default">
-          <li>商品、サービス提供および事務処理</li>
+        <p>当社は、取得した個人情報を、以下の目的で利用します。</p>
+        <ol class="kakko">
+          <!--li>商品、サービス提供および事務処理</li>
           <li>お問い合わせへの回答</li>
           <li>各種案内（イベント、キャンペーン等）</li>
           <li>サービス改善のための分析</li>
           <li>採用選考および従業員管理</li>
-          <li>法令対応</li>
-        </ul>
+          <li>法令対応</li-->
+          <li>お問い合わせへの回答、資料送付その他必要な連絡を行うため</li>
+          <li>当社の商品、サービスの提供、運営および管理のため</li>
+          <li>契約の締結および履行、取引先との連絡その他取引管理のため</li>
+          <li>当社のサービスおよびウェブサイトの改善、新たな商品またはサービスの企画・開発のため</li>
+          <li>当社のサービスに関するご案内、情報提供その他のご連絡のため</li>
+          <li>不正利用の防止、セキュリティの確保その他当社サービスの適切な運営のため</li>
+          <li>採用選考、採用に関する連絡その他採用活動のため</li>
+          <li>法令等に基づく義務の履行およびこれに関連する対応のため</li>
+        </ol>
+      </section>
+
+      <section id="section_05" class="section_mini template">
+        <h2 class="title js-count">第三者提供</h2>
+        <p>当社は、次のいずれかに該当する場合を除き、あらかじめ本人の同意を得ることなく、個人情報を第三者に提供しません。</p>
+        <ol class="kakko">
+          <li>法令に基づく場合</li>
+          <li>人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき</li>
+          <li>公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき</li>
+          <li>国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき</li>
+          <li>その他法令で認められる場合</li>
+        </ol>
       </section>
 
       <section id="section_06" class="section_mini template">
-        <h2 class="title js-count">第三者提供</h2>
-        <p>法令で認められる場合を除き、本人の同意なく第三者提供は行いません。</p>
-      </section>
-
-      <section id="section_07" class="section_mini template">
         <h2 class="title js-count">グループ会社との共同利用</h2>
-        <p>当社は必要に応じて、以下の範囲で共同利用を行います。</p>
-        <dl class="dl_flex dt5">
-          <dt>共同利用者</dt><dd>セトラスホールディングス株式会社および同グループ会社</dd>
-          <dt>利用項目</dt><dd>氏名、連絡先、購入履歴、所属等</dd>
+        <p>当社は、本ポリシーに定める利用目的の達成に必要な範囲で、個人情報をグループ会社との間で共同利用することがあります。</p>
+        <dl class="dl_flex dt8">
+          <dt>共同利用の範囲</dt><dd><ul class="link_ul"><li><a href="/about/group/">グループ会社</a></li></ul></dd>
+          <dt>利用項目</dt><dd>氏名、会社名、所属部署、役職、住所、電話番号、メールアドレスその他ご提供いただいた情報</dd>
           <dt>利用目的</dt><dd>本ポリシーに定める目的と同じ</dd>
           <dt>管理責任者</dt><dd>株式会社セトラスフードテック&emsp;代表取締役社長&emsp;鈴木&ensp;健彦</dd>
         </dl>
       </section>
 
-      <section id="section_08" class="section_mini template">
+      <section id="section_07" class="section_mini template">
         <h2 class="title js-count">安全管理措置</h2>
-        <p>漏えい、滅失、改ざんを防止するため、組織的、人的、技術的な安全管理措置を講じます。</p>
+        <p>当社は、個人情報の漏えい、滅失、毀損、不正アクセス等を防止するため、個人情報へのアクセス権限の管理、従業員に対する教育・監督その他必要かつ適切な安全管理措置を講じます。</p>
+        <p>また、個人情報の取扱いを外部事業者に委託する場合には、委託先に対して必要かつ適切な監督を行います。</p>
       </section>
 
+      <section id="section_08" class="section_mini template">
+        <h2 class="title js-count">開示、訂正、利用停止等</h2>
+        <p>当社は、保有する個人情報について、本人から開示、訂正、追加、削除、利用停止その他法令に基づく請求があった場合には、本人確認を行ったうえで、法令に従い適切に対応します。</p>
+        <p>これらの請求を希望される場合は、本ポリシーに定めるお問い合わせ窓口までご連絡ください。</p>
+      </section>
+
+
       <section id="section_09" class="section_mini template">
-        <h2 class="title js-count">開示、訂正、利用停止等の請求</h2>
-        <p>本人からの請求には、法令に基づき適切に対応します。</p>
+        <h2 class="title js-count">Cookie等の利用</h2>
+        <p>当社は、ウェブサイトの利便性向上、利用状況の分析その他サービス品質の向上のため、Cookieその他これに類する技術を利用することがあります。</p>
+        <p>利用者は、ブラウザの設定によりCookieの利用を制限または無効化することができます。</p>
+        <p>ただし、その場合、当社ウェブサイトの一部機能が利用できなくなることがあります。</p>
       </section>
 
       <section id="section_10" class="section_mini template">
-        <h2 class="title js-count">本ポリシーの改定</h2>
-        <p>必要に応じて内容を改定し、当社サイトで公表します。</p>
+        <h2 class="title js-count">改定</h2>
+        <p>当社は、法令の改正その他必要に応じて、本ポリシーの内容を改定することがあります。</p>
+        <p>改定後の本ポリシーは、当社ウェブサイトに掲載した時点からその効力を生じるものとします。</p>
       </section>
 
       <section id="section_11" class="section_mini template">
         <h2 class="title js-count">お問い合わせ</h2>
-        <p>ご意見等は次の連絡先までお願いいたします。</p>
+        <p>個人情報の取扱いに関するご質問、ご相談、苦情その他のお問い合わせについては、次の窓口までご連絡ください。</p>
         <dl class="dl_flex dt4 mt40">
           <dt>担当</dt><dd>人事総務部（個人情報担当）</dd>
           <dt>E-mail</dt><dd><span class="js-mail-p"></span></dd>
