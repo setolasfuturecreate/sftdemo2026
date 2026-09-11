@@ -75,8 +75,8 @@ function header_a(){
                   <li class="p-megaMenu__list-item"><a href="/about/">企業情報</a></li>\
                   <li class="p-megaMenu__list-item"><a href="/about/message/">トップメッセージ</a></li>\
                   <li class="p-megaMenu__list-item"><a href="/about/outline/">会社概要</a></li>\
-                  <!--li class="p-megaMenu__list-item"><a href="/about/history/">沿革</a></li>\
-                  <li class="p-megaMenu__list-item"><a href="/about/group/">グループ会社</a></li-->\
+                  <li class="p-megaMenu__list-item"><a href="/about/history/">沿革</a></li>\
+                  <li class="p-megaMenu__list-item"><a href="/about/group/">グループ会社</a></li>\
                 </ul>\
               </div>\
               <p><span class="p-megaMenu__close">close</span></p>\
@@ -151,8 +151,8 @@ function header_b(){
                   <li><a href="/about/">企業情報</a></li>\
                   <li><a href="/about/message/">トップメッセージ</a></li>\
                   <li><a href="/about/outline/">会社概要</a></li>\
-                  <!--li><a href="/about/history/">沿革</a></li>\
-                  <li><a href="/about/group/">グループ会社</a></li-->\
+                  <li><a href="/about/history/">沿革</a></li>\
+                  <li><a href="/about/group/">グループ会社</a></li>\
                 </ul>\
               </details>\
               <details class="accordion">\
@@ -399,14 +399,14 @@ function logo_name(){
               <span>ハーモニーフーズ<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
-          <div>\
+          <!--div>\
             <a href="https://shikoku-arcade.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
                 <img src="/common/img/shikoku-arcade/logo.png" alt="しこくあーけーど ロゴ" width="320" height="220">\
               </div>\
               <span>しこくあーけーど&#174;<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
-          </div>\
+          </div-->\
           <div>\
             <a href="https://aonodia.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
