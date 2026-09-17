@@ -84,12 +84,17 @@ $(window).scroll(function (){
 });
 
 
+
+
+//アンカーリンク位置修正
 window.addEventListener('load', () => {
   if (location.hash) {
     const target = document.querySelector(location.hash);
     target?.scrollIntoView({ behavior: 'auto', block: 'start' });
   }
 });
+
+
 
 
 //ルートパス開発環境---------------------------------------------------------------------
@@ -468,30 +473,30 @@ document.addEventListener('DOMContentLoaded', async () => {
   var conditions = $('.js_conditions');//現在の条件の選択状況を保持するオブジェクト
   var findConditions;//data-type の子要素（input）を取得する
   var currentType;//現在の data-type を示す
-  var count = 0;//讀懃ｴ｢繝偵ャ繝域焚
-  var checkcount = 0;//蜷�data-type縺ｮ繝√ぉ繝�け繝懊ャ繧ｯ繧ｹ驕ｸ謚樊焚
-  var data_check = 0;//蟇ｾ雎｡鬆�岼縺ｮ繝��繧ｿ縺後←繧後□縺代メ繧ｧ繝�け迥ｶ諷九→荳閾ｴ縺励※縺�ｋ縺�
-  var condition ={};//繝√ぉ繝�け繝懊ャ繧ｯ繧ｹ縺ｮ蜈･蜉帷憾諷九ｒ菫晄戟縺吶ｋ繧ｪ繝悶ず繧ｧ繧ｯ繝�
+  var count = 0;//検索ヒット数
+  var checkcount = 0;//data-typeのチェックボックス選択数
+  var data_check = 0;//対象項目のデータがどれだけチェック状態と一致しているか
+  var condition ={};//チェックボックスの入力状態を保持するオブジェクト
 
-  $('.js_denominator').text(box.length);//莉ｶ謨ｰ陦ｨ遉ｺ縺ｮ蛻�ｯ阪ｒ繧ｻ繝�ヨ
-  for(var i = 0; i < conditions.length; i++){//繧ｿ繝ｼ繧ｲ繝�ヨ縺ｮdata-type繧貞盾辣ｧ縺励√Γ繧ｽ繝�ラ縺ｨ縺励※condition縺ｫ蛟句挨縺ｫ莉｣蜈･縺吶ｋ
+  $('.js_denominator').text(box.length);//件数表示の値をセット
+  for(var i = 0; i < conditions.length; i++){//ターゲットのdata-typeを参照し、メソッドとしてconditionに個別に代入する
     currentType = conditions[i].getAttribute('data-type');
     condition[currentType] = [];
   }
-  function setConditions(){//譚｡莉ｶ險ｭ螳�
+  function setConditions(){//条件設定
     count = 0;
     box.removeClass('js_selected');
-    for(var i = 0; i < conditions.length; i++){//data-type縺斐→縺ｮ蜃ｦ逅�
+    for(var i = 0; i < conditions.length; i++){//data-typeごとの処理
       currentType = conditions[i].getAttribute('data-type');
       findConditions = conditions[i].querySelectorAll('input');
-      for(var n = 0; n< findConditions.length; n++){//input縺斐→縺ｮ蜃ｦ逅�
-        if(findConditions[n].checked){//迴ｾ蝨ｨ驕ｸ謚樔ｸｭ縺ｮ繧､繝ｳ繝励ャ繝医′驕ｸ謚槭＆繧後※縺�ｋ蝣ｴ蜷�
+      for(var n = 0; n< findConditions.length; n++){//inputごとの処理
+        if(findConditions[n].checked){//現在選択中のインプットが選択されている場合
           condition[currentType][findConditions[n].value] = true;
           checkcount++
         } else {
           condition[currentType][findConditions[n].value] = false;
         }
-        if(findConditions.length === n+1){//繝ｫ繝ｼ繝励′譛蠕後�蝣ｴ蜷�
+        if(findConditions.length === n+1){//ループが最後の場合
           if(checkcount === 0){
             for(var t = 0; t < findConditions.length; t++){
               condition[currentType][findConditions[t].value] = true;
@@ -501,14 +506,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       }
     }
-    for(var m = 0, len = box.length; m< len; ++m){//譛蛻昴↓蜿門ｾ励＠縺溘ち繝ｼ繧ｲ繝�ヨ縺ｮ諠��ｱ縺ｨ縲∫樟蝨ｨ縺ｮinput縺ｮ驕ｸ謚樒憾諷九ｒ豈碑ｼ�＠縺ｦ蜃ｦ逅�ｒ陦後≧
-      for(var i = 0; i < conditions.length; i++){//繧ｿ繝ｼ繧ｲ繝�ヨ縺ｮdata-type繧貞盾辣ｧ縺励√Γ繧ｽ繝�ラ縺ｨ縺励※condition縺ｫ蛟句挨縺ｫ莉｣蜈･縺吶ｋ
+    for(var m = 0, len = box.length; m< len; ++m){//最初に取得したターゲットの値と、現在のinputの選択状態を比較して処理を行う
+      for(var i = 0; i < conditions.length; i++){//ターゲットのdata-typeを参照し、メソッドとしてconditionに個別に代入する
         currentType = conditions[i].getAttribute('data-type');
-        //迴ｾ蝨ｨ縺ｮ繧ｿ繝ｼ繧ｲ繝�ヨ縺ｮtype諠��ｱ繧偵き繝ｳ繝槫玄蛻�ｊ縺ｧ蛻�牡縺励��蛻励↓莉｣蜈･
+        //現在のターゲットのtype値をカンマ区切りで分割し、配列に代入
         var currentBoxTypes = $(box[m]).data(currentType).split(',');
         for(var j = 0; j < currentBoxTypes.length; j++){
           if(condition[currentType][currentBoxTypes[j]]){
-            data_check++;//驕ｸ謚槭＠縺滓擅莉ｶ縺ｮ縺�■縺ｲ縺ｨ縺､縺ｧ繧ゅ�繝�メ縺励※縺溘ｉdata_check繧貞刈邂励＠縺ｦ繝ｫ繝ｼ繝励ｒ謚懊￠繧�
+            data_check++;//選択した条件のひとつでも一致していたらdata_checkを加算してループを抜ける
             break;
           } else {
           }
@@ -520,8 +525,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }else{
         }
         data_check = 0;
+        
     }
-    $('.js_numerator').text(count);//莉ｶ謨ｰ陦ｨ遉ｺ縺ｮ蛻�ｭ舌ｒ繧ｻ繝�ヨ
+    $('.js_numerator').text(count);//件数表示の値をセット
   }
   setConditions();
   $(document).on('click','input',function(){
@@ -921,17 +927,17 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // データ
 var areaLocations = [
-  [34.345085,134.047958, "セトラスホールディングス 株式会社 "],
-  [34.334942,133.877563, "協和化学工業 株式会社"],
-  [34.296478,134.147675, "マグミット製薬 株式会社"],
-  [34.345085,134.047958, "株式会社 セトラスフューチャークリエイト"],
-  [34.345085,134.047958, "株式会社 セトラスフードテック"],
-  [34.345085,134.047958, "合同会社 EaTime"],
-  [34.345085,134.047958, "合同会社 多島美"],
-  [34.292347,133.999695, "株式会社 ハーモニーフーズ"],
-  [34.305088,133.802155, "大西食品 株式会社"],
-  [34.243782,133.715942, "株式会社 蒼のダイヤ"],
-  [34.334306,134.055147, "株式会社 tao."]
+//  [34.345085,134.047958, "セトラスホールディングス株式会社"],
+//  [34.334942,133.877563, "協和化学工業株式会社"],
+//  [34.296478,134.147675, "マグミット製薬株式会社"],
+//  [34.345085,134.047958, "株式会社セトラスフューチャークリエイト"],
+  [34.345085,134.047958, "株式会社セトラスフードテック"],
+  [34.345085,134.047958, "合同会社EaTime"],
+  [34.345085,134.047958, "合同会社多島美"],
+  [34.292347,133.999695, "株式会社ハーモニーフーズ"],
+  [34.305088,133.802155, "大西食品株式会社"],
+  [34.243782,133.715942, "株式会社蒼のダイヤ"],
+//  [34.334306,134.055147, "株式会社tao."]
 ];
 
 
@@ -1090,25 +1096,6 @@ if (urlInput) {
 
 
 
-
-
-// 404 ---------------------------------------------------------------------
-
-function render(path) {
-  if (routes[path]) {
-    showPage(routes[path]);
-  } else {
-    show404();
-  }
-}
-
-function show404() {
-  document.body.innerHTML = `
-    <h1>404</h1>
-    <p>ページが見つかりません</p>
-    <a href="/">ホームへ戻る</a>
-  `;
-}
 
 
 
