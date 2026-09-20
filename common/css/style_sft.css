@@ -833,7 +833,6 @@ color:rgb(192,0,0);
 display  flex;
 display: inline-block;
 margin: 0 30px 5px 0;
-max-width: calc(100% - 0px);
   overflow:visible;
   white-space:normal;
 }
