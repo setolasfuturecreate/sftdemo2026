@@ -787,6 +787,10 @@ color:rgb(192,0,0);
   white-space: nowrap;
 }
 
+
+
+
+
 .link_ul li a{
   display: block;
   padding: 1px 10px 1px 1.1rem;
@@ -830,15 +834,20 @@ display  flex;
 display: inline-block;
 margin: 0 30px 5px 0;
 max-width: calc(100% - 0px);
+  overflow:visible;
+  white-space:normal;
 }
 
+.link_ul.row_1 li a , .link_ul_d.row_1 li a {
+  overflow:visible;
+  white-space:normal;
 
+}
 
-.link_ul.row_2 li a,.link_ul_d.row_2 li a,
-.link_ul.row_3 li a,.link_ul_d.row_3 li a,
-.link_ul.row_4 li a,.link_ul_d.row_4 li a,
-.link_ul.row_5 li a,.link_ul_d.row_5 li a,
-.link_ul.row_f li a,.link_ul_d.row_f li a {
+.link_ul.row_2 li a , .link_ul_d.row_2 li a ,
+.link_ul.row_3 li a , .link_ul_d.row_3 li a ,
+.link_ul.row_4 li a , .link_ul_d.row_4 li a ,
+.link_ul.row_5 li a , .link_ul_d.row_5 li a  {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
