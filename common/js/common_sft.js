@@ -750,19 +750,19 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // データ
 // -------------------------
 var locations = [
-  [34.345076,134.047506, "創作和食 瀬to菜", "japanese-restaurant", "/brands/dining/#setona"],
-  [34.344883,134.051239, "割烹 匠", "japanese-restaurant", "/brands/dining/#takumi"],
-  [34.346642,134.050781, "高松三越ランドマーク", "restaurant", "/brands/dining/#landmark"],
-  [34.307522,133.809052, "バーガーキング® イオンタウン宇多津", ""],
-  [34.350414,134.047607, "バーガーキング® 高松オルネ", "fast-food", ""],
-  [34.603951,133.761246, "バーガーキング® アリオ倉敷", "fast-food", ""],
-  [34.343304,134.049057, "サウィ食堂 高松店", "korean-restaurant", ""],
-  [34.345103,134.05087, "讃岐おもちゃ美術館 cafe", "cafe", "/brands/cafe/#sanuki-toy-museum"],
-  [34.372085,133.942311, "旧南原邸", "cafe", "/brands/cafe/#kyu-nanbaratei"],
-  [34.224956,133.77489, "まおかふぇ", "cafe", "/brands/cafe/#maocafe"],
-  [34.328655,134.041946, "Cafe de Ritsuin（カフェ・ド・リツリン）", "cafe", "/brands/cafe/#cafe-de-ritsurin"],
-  [34.350414,134.047607, "Passerelle（パスレル）", "sweets", "/brands/sweets/#passerelle"],
-  [34.346642,134.050781, "Maison de CIELetMER（メゾン・ド・シエルエメア）", "sweets", "/brands/sweets/#maison-de-cleletmer"]
+//  [34.345076,134.047506, "創作和食 瀬to菜", "japanese-restaurant", "/services/dining/#setona"],
+  [34.344883,134.051239, "割烹 匠", "japanese-restaurant", "/services/dining/#takumi"],
+  [34.345103,134.05087, "SANUKI FOOD FACTORY（サヌキ フード ファクトリー）", "cafe", "/services/cafe/#sanuki-food-factory"],
+  [34.372085,133.942311, "旧南原邸", "cafe", "/services/cafe/#kyu-nanbaratei"],
+  [34.350414,134.047607, "Passerelle（パスレル）", "sweets", "/services/sweets/#passerelle"],
+  [34.346642,134.050781, "Maison de CIELetMER（メゾン・ド・シエルエメア）", "sweets", "/services/sweets/#maison-de-cleletmer"],
+  [34.346642,134.050781, "高松三越ランドマーク（受託）", "restaurant", "/services/partnerse/#landmark"],
+  [34.224956,133.77489, "まおかふぇ（受託）", "cafe", "/services/partnerse/#maocafe"],
+  [34.328655,134.041946, "Cafe de Ritsuin（カフェ・ド・リツリン）（受託）", "cafe", "/services/partnerse/#cafe-de-ritsurin"],
+  [34.307522,133.809052, "バーガーキング® イオンタウン宇多津（FC）", ""],
+  [34.350414,134.047607, "バーガーキング® 高松オルネ（FC）", "fast-food", ""],
+  [34.603951,133.761246, "バーガーキング® アリオ倉敷（FC）", "fast-food", ""],
+  [34.343304,134.049057, "サウィ食堂 高松店（FC）", "korean-restaurant", ""]
 ];
 
 // -------------------------
