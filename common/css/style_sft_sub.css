@@ -2403,7 +2403,7 @@ padding : 30px 2px;
 .release_table .tag1001 , .release_table .tag1002 , .release_table .tag1003 , .release_table .tag1004 , .release_table .tag1005 , .release_table .tag1006 , .release_table .tag1007 , .release_table .tag1008 , .release_table .tag1009 , .release_table .tag1010 
 {
     display: inline-block;
-    margin-right:8px;
+    margin-right:5px;
     margin-bottom:5px;
     padding : 3px 0px;
   border 1px solid rgb(180, 180, 180);
@@ -2481,7 +2481,7 @@ padding : 30px 2px;
 .release_table .tag0901 , .release_table .tag0902 , .release_table .tag0903 , .release_table .tag0904 , .release_table .tag0905 , .release_table .tag0906 , .release_table .tag0907 , .release_table .tag0908 , .release_table .tag0909 , .release_table .tag0910 ,
 .release_table .tag1001 , .release_table .tag1002 , .release_table .tag1003 , .release_table .tag1004 , .release_table .tag1005 , .release_table .tag1006 , .release_table .tag1007 , .release_table .tag1008 , .release_table .tag1009 , .release_table .tag1010 
 {
-  width :9.8rem;
+  width :10rem;
   letter-spacing :0.3rem;
 }
 
@@ -2664,14 +2664,14 @@ padding : 30px 2px;
 
 	}
 	.release_table tr td:nth-child(2) {
-		padding:0 10px ;
+		padding:0 5px ;
 		border  0px;
 		width  100%;
 
 	}
 .release_table tbody tr td:nth-child(2) {
 padding-top : 5px;
-
+background rgba(0, 240, 207, 0.26);
 
 }
 	.release_table tr td:nth-child(3) {
