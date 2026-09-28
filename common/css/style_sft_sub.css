@@ -730,7 +730,7 @@ float:left;
 
 .brand-grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: auto;
   gap: 20px; 
     background  #f5f3ef; /* ベージュ系とか */
@@ -1611,11 +1611,11 @@ font-size:1.1rem !important;
 
 .logo_name {
 
-  margin: 40px 0 80px 0;
+  margin: 20px 0 80px 0;
   padding 0;
 
   display : grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr)); /* 横6列 */
+  grid-template-columns: repeat(8, minmax(0, 1fr)); /* 横6列 */
   gap: 50px 20px;
 }
 
@@ -1682,13 +1682,13 @@ font-size:1.1rem !important;
 
 @media (max-width: 960px) {
 .logo_name {
-  grid-template-columns: repeat(4, minmax(0, 1fr)); 
+  grid-template-columns: repeat(6, minmax(0, 1fr)); 
 }
 }
 
 @media (max-width: 720px) {
 .logo_name {
-  grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  grid-template-columns: repeat(4, minmax(0, 1fr)); 
 }
 }
 
@@ -2193,7 +2193,7 @@ ul.keywords2 {
     margin-bottom  20px;
     background  rgba(253, 23, 253 , .9);
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 20px 15px;
 }
 
@@ -2390,7 +2390,11 @@ padding : 30px 2px;
 .release_table .tag0301 , .release_table .tag0302 , .release_table .tag0303 , .release_table .tag0304 , .release_table .tag0305 , .release_table .tag0306 , .release_table .tag0307 , .release_table .tag0308 , .release_table .tag0309 , .release_table .tag0310 ,
 .release_table .tag0401 , .release_table .tag0402 , .release_table .tag0403 , .release_table .tag0404 , .release_table .tag0405 , .release_table .tag0406 , .release_table .tag0407 , .release_table .tag0408 , .release_table .tag0409 , .release_table .tag0410 ,
 .release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 ,
-.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 
+.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 ,
+.release_table .tag0701 , .release_table .tag0702 , .release_table .tag0703 , .release_table .tag0704 , .release_table .tag0705 , .release_table .tag0706 , .release_table .tag0707 , .release_table .tag0708 , .release_table .tag0709 , .release_table .tag0710 ,
+.release_table .tag0801 , .release_table .tag0802 , .release_table .tag0803 , .release_table .tag0804 , .release_table .tag0805 , .release_table .tag0806 , .release_table .tag0807 , .release_table .tag0808 , .release_table .tag0809 , .release_table .tag0810 ,
+.release_table .tag0901 , .release_table .tag0902 , .release_table .tag0903 , .release_table .tag0904 , .release_table .tag0905 , .release_table .tag0906 , .release_table .tag0907 , .release_table .tag0908 , .release_table .tag0909 , .release_table .tag0910 ,
+.release_table .tag1001 , .release_table .tag1002 , .release_table .tag1003 , .release_table .tag1004 , .release_table .tag1005 , .release_table .tag1006 , .release_table .tag1007 , .release_table .tag1008 , .release_table .tag1009 , .release_table .tag1010 
 {
     display: inline-block;
     margin-right:8px;
@@ -2465,9 +2469,13 @@ padding : 30px 2px;
 .release_table .tag0301 , .release_table .tag0302 , .release_table .tag0303 , .release_table .tag0304 , .release_table .tag0305 , .release_table .tag0306 , .release_table .tag0307 , .release_table .tag0308 , .release_table .tag0309 , .release_table .tag0310 ,
 .release_table .tag0401 , .release_table .tag0402 , .release_table .tag0403 , .release_table .tag0404 , .release_table .tag0405 , .release_table .tag0406 , .release_table .tag0407 , .release_table .tag0408 , .release_table .tag0409 , .release_table .tag0410 ,
 .release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 ,
-.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 
+.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 ,
+.release_table .tag0701 , .release_table .tag0702 , .release_table .tag0703 , .release_table .tag0704 , .release_table .tag0705 , .release_table .tag0706 , .release_table .tag0707 , .release_table .tag0708 , .release_table .tag0709 , .release_table .tag0710 ,
+.release_table .tag0801 , .release_table .tag0802 , .release_table .tag0803 , .release_table .tag0804 , .release_table .tag0805 , .release_table .tag0806 , .release_table .tag0807 , .release_table .tag0808 , .release_table .tag0809 , .release_table .tag0810 ,
+.release_table .tag0901 , .release_table .tag0902 , .release_table .tag0903 , .release_table .tag0904 , .release_table .tag0905 , .release_table .tag0906 , .release_table .tag0907 , .release_table .tag0908 , .release_table .tag0909 , .release_table .tag0910 ,
+.release_table .tag1001 , .release_table .tag1002 , .release_table .tag1003 , .release_table .tag1004 , .release_table .tag1005 , .release_table .tag1006 , .release_table .tag1007 , .release_table .tag1008 , .release_table .tag1009 , .release_table .tag1010 
 {
-  width :9.4rem;
+  width :9.8rem;
   letter-spacing :0.3rem;
 }
 
@@ -2476,60 +2484,58 @@ padding : 30px 2px;
 {  background:rgba(0, 140, 207, 0.16);  }/* Corporate */
 
 .release_table .tag0201 , .release_table .tag0202 , .release_table .tag0203 , .release_table .tag0204 , .release_table .tag0205 , .release_table .tag0206 , .release_table .tag0207 , .release_table .tag0208 , .release_table .tag0209 , .release_table .tag0210 
-{  background:rgba(246, 239, 230, 1);  }/* Food & Dining */
+{  background:rgba(246, 239, 230, 1);  }/* Dining */
 
 .release_table .tag0301 , .release_table .tag0302 , .release_table .tag0303 , .release_table .tag0304 , .release_table .tag0305 , .release_table .tag0306 , .release_table .tag0307 , .release_table .tag0308 , .release_table .tag0309 , .release_table .tag0310 
-{  background:rgba(248, 236, 239, 1);  }/* Cafe & Sweets */
+{  background:rgba(248, 236, 239, 1);  }/* Cafe */
 
 .release_table .tag0401 , .release_table .tag0402 , .release_table .tag0403 , .release_table .tag0404 , .release_table .tag0405 , .release_table .tag0406 , .release_table .tag0407 , .release_table .tag0408 , .release_table .tag0409 , .release_table .tag0410 
-{  background:rgba(237, 245, 236, 1);  }/* Local Food & Crafts */
+{  background:rgba(237, 245, 236, 1);  }/* Sweets */
 
 .release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 
-{  background:rgba(241, 237, 250, 1);  }/* Creative Works */
+{  background:rgba(241, 237, 250, 1);  }/* Food Service */
 
 .release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 
-{  background:rgba(247, 247, 220, 1);  }/* Stay & Eexperience */
+{  background:rgba(247, 247, 220, 1);  }/* Local Specialties */
 
+.release_table .tag0701 , .release_table .tag0702 , .release_table .tag0703 , .release_table .tag0704 , .release_table .tag0705 , .release_table .tag0706 , .release_table .tag0707 , .release_table .tag0708 , .release_table .tag0709 , .release_table .tag0710 
+{  background:rgba(237, 235, 240, 1);  }/* Partners */
+
+.release_table .tag0101  {
+    letter-spacing: 0.1rem;
+}
 
 .release_table .tag0102  {
-    letter-spacing: -0.1rem;
-}
-
-.release_table .tag0201  {
-    letter-spacing : 0.2rem;
-}
-
-.release_table .tag0204  {
-    letter-spacing : 0.2rem;
-}
-
-.release_table .tag0206  {
-    letter-spacing : -0.01rem;
+    letter-spacing: -0.05rem;
 }
 
 .release_table .tag0301  {
-    letter-spacing : 0.2rem;
+    letter-spacing : -0.05rem;
 }
 
-.release_table .tag0302  {
-    letter-spacing : 0.05rem;
+.release_table .tag0402  {
+    letter-spacing: 0rem;
 }
 
-.release_table .tag0303  {
-    letter-spacing : -0.02rem;
+.release_table .tag0701  {
+    letter-spacing: -0.1rem;
 }
 
-
-.release_table .tag0305  {
-    letter-spacing : -0.01rem;
+.release_table .tag0702  {
+    letter-spacing: 0.1rem;
 }
 
-.release_table .tag0401  {
-    letter-spacing : -0.0rem;
+.release_table .tag0703  {
+    letter-spacing: 0rem;
 }
 
+.release_table .tag0704  {
+    letter-spacing: 0rem;
+}
 
-
+.release_table .tag0705  {
+    letter-spacing: 0.2rem;
+}
 
 @media screen and (max-width:300px) {
 .release_table .tag_a ,
