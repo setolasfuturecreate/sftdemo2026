@@ -2278,7 +2278,11 @@ ul.keywords2 {
 }
 }
 
-
+@media screen and (max-width: 300px){
+.bl_selectBlock_content{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+}
 
 
 
