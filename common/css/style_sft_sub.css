@@ -2522,10 +2522,10 @@ padding : 30px 2px;
 .release_table .tag0901 , .release_table .tag0902 , .release_table .tag0903 , .release_table .tag0904 , .release_table .tag0905 , .release_table .tag0906 , .release_table .tag0907 , .release_table .tag0908 , .release_table .tag0909 , .release_table .tag0910 ,
 .release_table .tag1001 , .release_table .tag1002 , .release_table .tag1003 , .release_table .tag1004 , .release_table .tag1005 , .release_table .tag1006 , .release_table .tag1007 , .release_table .tag1008 , .release_table .tag1009 , .release_table .tag1010 
 {
-  letter-spacing : -0.01rem;
+  letter-spacing  -0.01rem;
   width  auto;
   padding 3px 5px;
-  text-indent:0;
+  text-indent 0;
 
 }
 }
