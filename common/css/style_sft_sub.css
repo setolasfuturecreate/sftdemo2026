@@ -2293,7 +2293,7 @@ ul.keywords2 {
 background : rgba(255, 255, 255, .85 );
 
 margin  0 ;
-padding:30px 100px;
+padding :30px 3%;
   border-radius: 20px;
   
   border : 1px solid rgba(255,255,255,.7);
@@ -2305,13 +2305,14 @@ padding:30px 100px;
 
 @media screen and (max-width: 960px){
 .ff_frame{
-padding:30px 5%;
+padding 30px 20px;
 }
 }
-
+/**/
 @media screen and (max-width: 480px){
 .ff_frame{
-padding:30px 10px;
+padding: 0;
+  border-radius: 0;
 }
 }
 
@@ -2343,8 +2344,8 @@ padding:30px 10px;
 }
 
 .release_table tbody tr th {
-    width:9.0rem;
-    padding : 30px 2px 30px 10px;
+    width :8.8rem;
+    padding : 30px 5px ;
     background   #ee9afc;
 }
 .release_table tbody tr td:nth-child(2) {
@@ -2485,6 +2486,34 @@ padding : 30px 2px;
   letter-spacing :0.3rem;
 }
 
+@media screen and (max-width:480px) {
+.release_table .tag_a ,
+.release_table .tag_b ,
+.release_table .tag_c ,
+.release_table .tag_d ,
+.release_table .tag_e ,
+.release_table .tag_f ,
+.release_table .tag_g ,
+.release_table .tag_h ,
+.release_table .tag0101 , .release_table .tag0102 , .release_table .tag0103 , .release_table .tag0104 , .release_table .tag0105 , .release_table .tag0106 , .release_table .tag0107 , .release_table .tag0108 , .release_table .tag0109 , .release_table .tag0110 ,
+.release_table .tag0201 , .release_table .tag0202 , .release_table .tag0203 , .release_table .tag0204 , .release_table .tag0205 , .release_table .tag0206 , .release_table .tag0207 , .release_table .tag0208 , .release_table .tag0209 , .release_table .tag0210 ,
+.release_table .tag0301 , .release_table .tag0302 , .release_table .tag0303 , .release_table .tag0304 , .release_table .tag0305 , .release_table .tag0306 , .release_table .tag0307 , .release_table .tag0308 , .release_table .tag0309 , .release_table .tag0310 ,
+.release_table .tag0401 , .release_table .tag0402 , .release_table .tag0403 , .release_table .tag0404 , .release_table .tag0405 , .release_table .tag0406 , .release_table .tag0407 , .release_table .tag0408 , .release_table .tag0409 , .release_table .tag0410 ,
+.release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 ,
+.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 ,
+.release_table .tag0701 , .release_table .tag0702 , .release_table .tag0703 , .release_table .tag0704 , .release_table .tag0705 , .release_table .tag0706 , .release_table .tag0707 , .release_table .tag0708 , .release_table .tag0709 , .release_table .tag0710 ,
+.release_table .tag0801 , .release_table .tag0802 , .release_table .tag0803 , .release_table .tag0804 , .release_table .tag0805 , .release_table .tag0806 , .release_table .tag0807 , .release_table .tag0808 , .release_table .tag0809 , .release_table .tag0810 ,
+.release_table .tag0901 , .release_table .tag0902 , .release_table .tag0903 , .release_table .tag0904 , .release_table .tag0905 , .release_table .tag0906 , .release_table .tag0907 , .release_table .tag0908 , .release_table .tag0909 , .release_table .tag0910 ,
+.release_table .tag1001 , .release_table .tag1002 , .release_table .tag1003 , .release_table .tag1004 , .release_table .tag1005 , .release_table .tag1006 , .release_table .tag1007 , .release_table .tag1008 , .release_table .tag1009 , .release_table .tag1010 
+{
+  letter-spacing : -0.01rem;
+  width  auto;
+  padding 3px 5px;
+  text-indent:0;
+
+}
+}
+
 
 .release_table .tag0101 , .release_table .tag0102 , .release_table .tag0103 , .release_table .tag0104 , .release_table .tag0105 , .release_table .tag0106 , .release_table .tag0107 , .release_table .tag0108 , .release_table .tag0109 , .release_table .tag0110 
 {  background:rgba(0, 140, 207, 0.16);  }/* Corporate */
@@ -2512,7 +2541,7 @@ padding : 30px 2px;
 }
 
 .release_table .tag0102  {
-    letter-spacing: -0.06rem;
+    letter-spacing: -0.1rem;
 }
 
 .release_table .tag0301  {
@@ -2543,29 +2572,25 @@ padding : 30px 2px;
     letter-spacing: 0.2rem;
 }
 
-@media screen and (max-width:300px) {
-.release_table .tag_a ,
-.release_table .tag_b ,
-.release_table .tag_c ,
-.release_table .tag_d ,
-.release_table .tag_e ,
-.release_table .tag_f ,
-.release_table .tag_g ,
-.release_table .tag_h ,
+
+@media screen and (max-width:960px) {
 .release_table .tag0101 , .release_table .tag0102 , .release_table .tag0103 , .release_table .tag0104 , .release_table .tag0105 , .release_table .tag0106 , .release_table .tag0107 , .release_table .tag0108 , .release_table .tag0109 , .release_table .tag0110 ,
 .release_table .tag0201 , .release_table .tag0202 , .release_table .tag0203 , .release_table .tag0204 , .release_table .tag0205 , .release_table .tag0206 , .release_table .tag0207 , .release_table .tag0208 , .release_table .tag0209 , .release_table .tag0210 ,
 .release_table .tag0301 , .release_table .tag0302 , .release_table .tag0303 , .release_table .tag0304 , .release_table .tag0305 , .release_table .tag0306 , .release_table .tag0307 , .release_table .tag0308 , .release_table .tag0309 , .release_table .tag0310 ,
 .release_table .tag0401 , .release_table .tag0402 , .release_table .tag0403 , .release_table .tag0404 , .release_table .tag0405 , .release_table .tag0406 , .release_table .tag0407 , .release_table .tag0408 , .release_table .tag0409 , .release_table .tag0410 ,
 .release_table .tag0501 , .release_table .tag0502 , .release_table .tag0503 , .release_table .tag0504 , .release_table .tag0505 , .release_table .tag0506 , .release_table .tag0507 , .release_table .tag0508 , .release_table .tag0509 , .release_table .tag0510 ,
-.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 
+.release_table .tag0601 , .release_table .tag0602 , .release_table .tag0603 , .release_table .tag0604 , .release_table .tag0605 , .release_table .tag0606 , .release_table .tag0607 , .release_table .tag0608 , .release_table .tag0609 , .release_table .tag0610 ,
+.release_table .tag0701 , .release_table .tag0702 , .release_table .tag0703 , .release_table .tag0704 , .release_table .tag0705 , .release_table .tag0706 , .release_table .tag0707 , .release_table .tag0708 , .release_table .tag0709 , .release_table .tag0710 ,
+.release_table .tag0801 , .release_table .tag0802 , .release_table .tag0803 , .release_table .tag0804 , .release_table .tag0805 , .release_table .tag0806 , .release_table .tag0807 , .release_table .tag0808 , .release_table .tag0809 , .release_table .tag0810 ,
+.release_table .tag0901 , .release_table .tag0902 , .release_table .tag0903 , .release_table .tag0904 , .release_table .tag0905 , .release_table .tag0906 , .release_table .tag0907 , .release_table .tag0908 , .release_table .tag0909 , .release_table .tag0910 ,
+.release_table .tag1001 , .release_table .tag1002 , .release_table .tag1003 , .release_table .tag1004 , .release_table .tag1005 , .release_table .tag1006 , .release_table .tag1007 , .release_table .tag1008 , .release_table .tag1009 , .release_table .tag1010 
 {
-  letter-spacing : -0.01rem;
-  width :auto;
-  padding :3px 5px;
-  text-indent:0;
+  width auto;
 
 }
 }
+
+
 
 
 
@@ -2671,7 +2696,7 @@ padding : 30px 2px;
 	}
 .release_table tbody tr td:nth-child(2) {
 padding-top : 5px;
-background :rgba(0, 240, 207, 0.26);
+background rgba(0, 240, 207, 0.26);
 
 }
 	.release_table tr td:nth-child(3) {
