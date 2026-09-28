@@ -2411,7 +2411,7 @@ padding : 30px 2px;
     font-weight:bold !important;
     text-align : center;
     text-justify: auto;
-    text-indent:0.2rem;
+    text-indent 0.1rem;
     border-radius: 20px;
 }
 
@@ -2481,7 +2481,7 @@ padding : 30px 2px;
 .release_table .tag0901 , .release_table .tag0902 , .release_table .tag0903 , .release_table .tag0904 , .release_table .tag0905 , .release_table .tag0906 , .release_table .tag0907 , .release_table .tag0908 , .release_table .tag0909 , .release_table .tag0910 ,
 .release_table .tag1001 , .release_table .tag1002 , .release_table .tag1003 , .release_table .tag1004 , .release_table .tag1005 , .release_table .tag1006 , .release_table .tag1007 , .release_table .tag1008 , .release_table .tag1009 , .release_table .tag1010 
 {
-  width :10rem;
+  width :9.6rem;
   letter-spacing :0.3rem;
 }
 
@@ -2512,7 +2512,7 @@ padding : 30px 2px;
 }
 
 .release_table .tag0102  {
-    letter-spacing: -0.05rem;
+    letter-spacing: -0.06rem;
 }
 
 .release_table .tag0301  {
