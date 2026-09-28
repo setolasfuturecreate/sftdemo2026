@@ -784,7 +784,7 @@ color:rgb(192,0,0);
   z-index: 10;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space nowrap;
 }
 
 
