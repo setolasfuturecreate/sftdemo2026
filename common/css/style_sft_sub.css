@@ -1692,6 +1692,12 @@ font-size:1.1rem !important;
 }
 }
 
+@media (max-width: 480px) {
+.logo_name {
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
+}
+}
+
 @media (max-width: 280px) {
 .logo_name {
   grid-template-columns: repeat(1, minmax(0, 1fr)); 
@@ -3286,6 +3292,7 @@ paddng-bottom 0;
   font-size 1.8rem;
   font-weight bold;
   margin-right:32px;
+  margin-bottom:10px;
 }
 
 .recruit-title-full::before , .recruit-title-keiyaku::before , .recruit-title-part::before {
