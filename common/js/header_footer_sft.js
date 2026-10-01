@@ -384,6 +384,14 @@ function logo_name(){
         <div class="logo_name">\
           <div>\
             <a href="https://www.mitsukoshi.mistore.jp/takamatsu/shops/restaurant/landmark.html" target="_blank" rel="noopener">\
+              <div class="logo_name-child"><!--高松三越<br>LANDMARK-->\
+                <img src="/common/img/landmark/logo.png" alt="landmark ロゴ" width="160" height="53"-->\
+              </div>\
+              <span>高松三越ランドマーク<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+            </a>\
+          </div>\
+          <div>\
+            <a href="https://www.mitsukoshi.mistore.jp/takamatsu/shops/restaurant/landmark.html" target="_blank" rel="noopener">\
               <div class="logo_name-child">高松三越<br>LANDMARK\
                 <!--img src="/common/img/landmark/logo.png" alt="landmark ロゴ" width="160" height="53"-->\
               </div>\
