@@ -649,7 +649,7 @@ var locations = [
   [34.345103,134.05087, "SANUKI FOOD FACTORY（サヌキ フード ファクトリー）", "cafe", "/services/cafe/#sanuki-food-factory"],
   [34.372085,133.942311, "旧南原邸", "cafe", "/services/cafe/#kyu-nanbaratei"],
   [34.350414,134.047607, "Passerelle（パスレル）", "sweets", "/services/sweets/#passerelle"],
-  [34.346642,134.050781, "Maison de CIELetMER（メゾン・ド・シエルエメア）", "sweets", "/services/sweets/index.html#maison-de-cleletmer"],
+  [34.346642,134.050781, "Maison de CIELetMER（メゾン・ド・シエルエメア）", "sweets", "/sftdemo2026/services/sweets/#maison-de-cleletmer"],
   [34.307522,133.809052, "バーガーキング<sup>®</sup> イオンタウン宇多津（FC加盟店）", "fast-food", "/services/partnerse/#burger-king"],
   [34.350414,134.047607, "バーガーキング<sup>®</sup> 高松オルネ（FC加盟店）", "fast-food", "/services/partnerse/#burger-king"],
   [34.603951,133.761246, "バーガーキング<sup>®</sup> アリオ倉敷（FC加盟店）", "fast-food", "/services/partnerse/#burger-king"],
