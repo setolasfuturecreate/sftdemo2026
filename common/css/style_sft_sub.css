@@ -1464,43 +1464,47 @@ ul.brand-card img {
 }
 
 .store-title-c1::before {
-  background: url(../../common/img/c1.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c1.png) no-repeat center / contain;
 }
 
 .store-title-c2::before {
-  background: url(../../common/img/c2.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c2.png) no-repeat center / contain;
 }
 
 .store-title-c3::before {
-  background: url(../../common/img/c3.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c3.png) no-repeat center / contain;
 }
 
 .store-title-c4::before {
-  background: url(../../common/img/c4.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c4.png) no-repeat center / contain;
 }
 
 .store-title-c5::before {
-  background: url(../../common/img/c5.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c5.png) no-repeat center / contain;
 }
 
 .store-title-c6::before {
-  background: url(../../common/img/c6.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c6.png) no-repeat center / contain;
 }
 
 .store-title-c7::before {
-  background: url(../../common/img/c7.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c7.png) no-repeat center / contain;
 }
 
 .store-title-c8::before {
-  background: url(../../common/img/c8.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c8.png) no-repeat center / contain;
 }
 
 .store-title-c9::before {
-  background: url(../../common/img/c9.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c9.png) no-repeat center / contain;
 }
 
 .store-title-c10::before {
-  background: url(../../common/img/c10.png) no-repeat center / contain;
+  background: url(../../common/img/i_services/c10.png) no-repeat center / contain;
+}
+
+.store-title-c11::before {
+  background: url(../../common/img/i_services/c11.png) no-repeat center / contain;
 }
 
 
