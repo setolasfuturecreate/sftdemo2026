@@ -181,7 +181,7 @@ function footer(){
         <div class="f_logo">\
           <div class="corporate_logo">\
             <ul>\
-              <li><a href="/"><img src="/common/img/logo.png" alt="フッターロゴ" width="440" height="72"></a></li>\
+              <li><a href="/"><img src="/common/img/logo.png" alt="フッターロゴ" width="440" height="103"></a></li>\
             </ul>\
           </div>\
         </div><!--f_logo-->\
@@ -296,7 +296,6 @@ function footer(){
 function logo_name(){
     var html = "";
     html += '\
-        <h2 class="title">各サイト（外部サイトリンク）</h2>\
         <h3 class="title">ブランド、店舗</h3>\
         <div class="logo_name">\
           <div>\
@@ -341,8 +340,8 @@ function logo_name(){
           </div>\
           <div>\
             <a href="https://harmonyfoods.jp/" target="_blank" rel="noopener">\
-              <div class="logo_name-child">Harmony<br>foods\
-                <!--img src="/common/img/harmony-foods/logo.png" alt="ハーモニーフーズ ロゴ" width="160" height="179"-->\
+              <div class="logo_name-child">\
+                <img src="/common/img/harmony-foods/logo.png" alt="ハーモニーフーズ ロゴ" width="160" height="179">\
               </div>\
               <span>ハーモニーフーズ<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
@@ -350,7 +349,7 @@ function logo_name(){
           <div>\
             <a href="https://aonodia.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
-                <img src="/common/img/aono-dia/logo.png" alt="蒼のダイヤ ロゴ" width="160" height="51">\
+                <img src="/common/img/aono-dia/logo.png" alt="蒼のダイヤ ロゴ" width="160" height="133">\
               </div>\
               <span>蒼のダイヤ<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
@@ -368,7 +367,7 @@ function logo_name(){
               <div class="logo_name-child">\
                 <img src="/common/img/shikoku-arcade/logo.png" alt="しこくあーけーど ロゴ" width="160" height="110">\
               </div>\
-              <span>しこくあーけーど&#174;<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+              <span>しこくあーけーど<sup>&#174;</sup><img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
           <div>\
@@ -383,6 +382,14 @@ function logo_name(){
         <h3 class="title">受託運営、事業連携</h3>\
         <div class="logo_name">\
           <div>\
+            <a href="https://www.burgerking.co.jp/home" target="_blank" rel="noopener">\
+              <div class="logo_name-child">\
+                <img src="/common/img/burger-king/logo.png" alt="バーガーキング ロゴ" width="160" height="154">\
+              </div>\
+              <span>バーガーキング<sup>&#174;</sup><img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
+            </a>\
+          </div>\
+          <div>\
             <a href="https://www.mitsukoshi.mistore.jp/takamatsu/shops/restaurant/landmark.html" target="_blank" rel="noopener">\
               <div class="logo_name-child"><!--高松三越<br>LANDMARK-->\
                 <img src="/common/img/landmark/logo.png" alt="landmark ロゴ" width="160" height="53"-->\
@@ -391,17 +398,9 @@ function logo_name(){
             </a>\
           </div>\
           <div>\
-            <a href="https://www.mitsukoshi.mistore.jp/takamatsu/shops/restaurant/landmark.html" target="_blank" rel="noopener">\
-              <div class="logo_name-child">高松三越<br>LANDMARK\
-                <!--img src="/common/img/landmark/logo.png" alt="landmark ロゴ" width="160" height="53"-->\
-              </div>\
-              <span>高松三越ランドマーク<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
-            </a>\
-          </div>\
-          <div>\
             <a href="https://zentsuji.com/shukubou/mamocafe/" target="_blank" rel="noopener">\
-              <div class="logo_name-child">まおかふぇ\
-                <!--img src="/common/img/maocafe/logo.png" alt="まおかふぇ ロゴ" width="160" height="160"-->\
+              <div class="logo_name-child">\
+                <img src="/common/img/maocafe/logo.png" alt="まおかふぇ ロゴ" width="160" height="135">\
               </div>\
               <span>まおかふぇ<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
@@ -414,14 +413,6 @@ function logo_name(){
               <span>Café de Ritsurin（カフェ・ド・リツリン）<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
           </div>\
-          <!--div>\
-            <a href="https://www.burgerking.co.jp/home" target="_blank" rel="noopener">\
-              <div class="logo_name-child">\
-                <img src="/common/img/burger-king/logo.png" alt="バーガーキング ロゴ" width="160" height="19">\
-              </div>\
-              <span>バーガーキング&#174;<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
-            </a>\
-          </div>\
           <div>\
             <a href="https://www.sawee-japan.com/" target="_blank" rel="noopener">\
               <div class="logo_name-child">\
@@ -429,7 +420,7 @@ function logo_name(){
               </div>\
               <span>サウィ食堂<img src="/common/img/i_window.png" alt="別ウィンドウで開く" width="15" height="15"></span>\
             </a>\
-          </div-->\
+          </div>\
         </div>\
         <!-- logo_name -->';
     html += '';

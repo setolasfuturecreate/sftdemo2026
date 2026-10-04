@@ -10,93 +10,6 @@
 
 
 
-window.addEventListener("load", () => {
-  document.body.style.visibility = "visible";
-  document.getElementById("loading").style.display = "none";
-});
-
-
-
-
-
-//ログインの設定---------------------------------------------------------------------
-
-
-
-
-
-
-
-//スクロールの設定---------------------------------------------------------------------
-$(function () {
-    var topBtn = $('.return');
-    topBtn.hide();
-    //スクロール100に達したらボタン表示
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    //スクロールしてトップへ
-    topBtn.click(function() {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 50);
-        return false;
-    });
-});
-
-
-
-
-
-//scroll_effect
-$(window).scroll(function () {
-  var scrollAnimationElm = document.querySelectorAll('.scroll_up , .scroll_left , .scroll_right');
-  var scrollAnimationFunc = function () {
-    for (var i = 0; i < scrollAnimationElm.length; i++) {
-      var triggerMargin = 150;
-      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
-        scrollAnimationElm[i].classList.add('on');
-      }
-    }
-  }
-  window.addEventListener('load', scrollAnimationFunc);
-  window.addEventListener('scroll', scrollAnimationFunc);
-});
-
-
-
-
-//ふわっと出現
-$(window).scroll(function (){
-	$('.fadein').each(function(){
-		var elemPos = $(this).offset().top,
-		scroll = $(window).scrollTop(),
-		windowHeight = $(window).height();
-
-			if (scroll > elemPos - windowHeight + 120){
-				$(this).addClass('scrollin');
-			}
-	});
-});
-
-
-
-
-//アンカーリンク位置修正
-window.addEventListener('load', () => {
-  if (location.hash) {
-    const target = document.querySelector(location.hash);
-    target?.scrollIntoView({ behavior: 'auto', block: 'start' });
-  }
-});
-
-
-
-
 //ルートパス開発環境---------------------------------------------------------------------
 $(document).ready(function () {
 
@@ -123,31 +36,7 @@ $(document).ready(function () {
 
 
 
-
-
-
-//ルートパス検索---------------------------------------------------------------------
-document.querySelectorAll('form[action="/search/"]').forEach(form => {
-  form.addEventListener("submit", function () {
-    const input = this.querySelector('input[name="q"]');
-    sessionStorage.setItem("searchQuery", input.value);
-  });
-});
-
-
-
-// URLパラメータ取得
-
-const urlParams = new URLSearchParams(window.location.search);
-query = urlParams.get("q");
-
-
-
-
-
-
-//パス正規化開発環境---------------------------------------------------------------------
-
+//パス正規化開発環境（ローカル閲覧補助）---------------------------------------------------------------------
 (function () {
   const INDEX_NAME = "index.html";
 
@@ -240,7 +129,79 @@ query = urlParams.get("q");
 
 
 
+//loading---------------------------------------------------------------------
+window.addEventListener("load", () => {
+  document.body.style.visibility = "visible";
+  document.getElementById("loading").style.display = "none";
+});
+window.addEventListener("load", () => {
+document.querySelector(".l-header").style.opacity = "1";
+});
 
+
+
+//スクロールの設定---------------------------------------------------------------------
+$(function () {
+    var topBtn = $('.return');
+    topBtn.hide();
+    //スクロール100に達したらボタン表示
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップへ
+    topBtn.click(function() {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 50);
+        return false;
+    });
+});
+
+
+
+//scroll_effect
+$(window).scroll(function () {
+  var scrollAnimationElm = document.querySelectorAll('.scroll_up , .scroll_left , .scroll_right');
+  var scrollAnimationFunc = function () {
+    for (var i = 0; i < scrollAnimationElm.length; i++) {
+      var triggerMargin = 150;
+      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+        scrollAnimationElm[i].classList.add('on');
+      }
+    }
+  }
+  window.addEventListener('load', scrollAnimationFunc);
+  window.addEventListener('scroll', scrollAnimationFunc);
+});
+
+
+
+//ふわっと出現
+$(window).scroll(function() {
+  $('.fadein').each(function() {
+    var elemPos = $(this).offset().top,
+      scroll = $(window).scrollTop(),
+      windowHeight = $(window).height();
+    if (scroll > elemPos - windowHeight + 120) {
+      $(this).addClass('scrollin');
+    }
+  });
+});
+
+
+
+
+//アンカーリンク位置修正
+window.addEventListener('load', () => {
+  if (location.hash) {
+    const target = document.querySelector(location.hash);
+    target?.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }
+});
 
 
 
@@ -282,71 +243,24 @@ function closeOverlay() {
 
 
 
-
-
-
-
-
-// お知らせN件ピックアップ---------------------------------------------------------------------
-document.addEventListener('DOMContentLoaded', async () => {
-  const TARGET_TBODY = document.getElementById('latest-news-body');
-  const LIMIT = 5;
-
-  if (!TARGET_TBODY) return;
-
-  const NEWS_URL = '/news/'; // 404になる環境なら '/news/index.html' にする
-
-  try {
-    const res = await fetch(NEWS_URL, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`fetch失敗: ${res.status}`);
-
-    const html = await res.text();
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-
-    const sourceTable = doc.querySelector('#news-list');
-    if (!sourceTable) throw new Error('#news-list が見つかりません');
-
-    const rows = [...sourceTable.querySelectorAll('tbody.list > tr')]
-      .filter(r => r.querySelectorAll('td, th').length > 0)
-      .slice(0, LIMIT);
-
-    // いったんクリア（任意）
-    TARGET_TBODY.textContent = '';
-
-    const frag = document.createDocumentFragment();
-
-    for (const row of rows) {
-      const clone = row.cloneNode(true);
-
-      // 相対リンク補正（/news/ 基準に直す）
-      clone.querySelectorAll('a[href]').forEach(a => {
-        const href = a.getAttribute('href')?.trim();
-        if (!href) return;
-        if (
-          href.startsWith('#') ||
-          href.startsWith('javascript:') ||
-          href.startsWith('mailto:') ||
-          href.startsWith('tel:')
-        ) return;
-
-        a.href = new URL(href, res.url).toString();
-      });
-
-      frag.appendChild(clone);
-    }
-
-    TARGET_TBODY.appendChild(frag);
-
-  } catch (e) {
-    console.error('最新ニュース取得エラー:', e);
-  }
+//ルートパス検索---------------------------------------------------------------------
+document.querySelectorAll('form[action="/search/"]').forEach(form => {
+  form.addEventListener("submit", function () {
+    const input = this.querySelector('input[name="q"]');
+    sessionStorage.setItem("searchQuery", input.value);
+  });
 });
 
 
 
+// URLパラメータ取得
+
+const urlParams = new URLSearchParams(window.location.search);
+query = urlParams.get("q");
 
 
 
+// SNSシェア機能---------------------------------------------------------------------
 (function () {
   var base = "https://setolasfoodtech.com/";
 
@@ -459,14 +373,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 
-
-
-
-
-
-
-
-
 // お知らせ一覧絞り込み---------------------------------------------------------------------
   $(function(){
   var box = $('.js_target');//検索対象の DOM を指定する
@@ -543,9 +449,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 
-
-
-
 // Lightbox（キャプション付き、複数対応）---------------------------------------------------------------------
 document.querySelectorAll('.gallery').forEach(gallery => {
   const images = gallery.querySelectorAll('img');
@@ -612,11 +515,6 @@ document.querySelectorAll('.gallery').forEach(gallery => {
     }
   });
 });
-
-
-
-
-
 
 
 
@@ -732,11 +630,7 @@ document.querySelectorAll('.gallery').forEach(gallery => {
 
 
 
-
-
 // map ---------------------------------------------------------------------
-
-
 // -------------------------
 // 地図（mapShop）
 // -------------------------
@@ -756,13 +650,13 @@ var locations = [
   [34.372085,133.942311, "旧南原邸", "cafe", "/services/cafe/#kyu-nanbaratei"],
   [34.350414,134.047607, "Passerelle（パスレル）", "sweets", "/services/sweets/#passerelle"],
   [34.346642,134.050781, "Maison de CIELetMER（メゾン・ド・シエルエメア）", "sweets", "/services/sweets/#maison-de-cleletmer"],
+  [34.307522,133.809052, "バーガーキング<sup>®</sup> イオンタウン宇多津（FC加盟店）", "fast-food", "/services/partnerse/#burger-king"],
+  [34.350414,134.047607, "バーガーキング<sup>®</sup> 高松オルネ（FC加盟店）", "fast-food", "/services/partnerse/#burger-king"],
+  [34.603951,133.761246, "バーガーキング<sup>®</sup> アリオ倉敷（FC加盟店）", "fast-food", "/services/partnerse/#burger-king"],
   [34.346642,134.050781, "高松三越ランドマーク（受託）", "restaurant", "/services/partnerse/#landmark"],
   [34.224956,133.77489, "まおかふぇ（受託）", "cafe", "/services/partnerse/#maocafe"],
   [34.328655,134.041946, "Cafe de Ritsuin（カフェ・ド・リツリン）（受託）", "cafe", "/services/partnerse/#cafe-de-ritsurin"],
-  [34.307522,133.809052, "バーガーキング® イオンタウン宇多津（FC）", ""],
-  [34.350414,134.047607, "バーガーキング® 高松オルネ（FC）", "fast-food", ""],
-  [34.603951,133.761246, "バーガーキング® アリオ倉敷（FC）", "fast-food", ""],
-  [34.343304,134.049057, "サウィ食堂 高松店（FC）", "korean-restaurant", ""]
+  [34.343304,134.049057, "サウィ食堂 高松店（FC加盟店）", "korean-restaurant", "/services/partnerse/#sawee-syokudou"]
 ];
 
 // -------------------------
@@ -911,11 +805,6 @@ function sortNorth() {
   drawAll(sorted);
 }
 
-
-
-
-
-
 // =====================
 // エリアマップ
 // =====================
@@ -1047,19 +936,7 @@ worldList.prepend(worldReset);
 
 
 
-
-
-
-
-
-
 // entry-btn & entry-form 代入 ---------------------------------------------------------------------
-
-
-
-
-
-
 
 const entryParams = new URLSearchParams(window.location.search);
 
@@ -1076,35 +953,6 @@ if (titleInput) {
 if (urlInput) {
   urlInput.value = url || "";
 }
-
-
-
-
-
-
-// E-mail ---------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
