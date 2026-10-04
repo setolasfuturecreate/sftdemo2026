@@ -51,7 +51,7 @@ table tbody th{ text-align: left !important;}
 .l-header {  position :absolute; 	box-shadow: none; z-index : 0;}
 .header_logo_info{  float:none;}
 .top-navigation-global , .p-navigation-global {display: none !important;}
-.sp{display: none;}
+.sp , .search-toggle{display: none;}
 
 
 
@@ -117,42 +117,46 @@ table tbody th{ text-align: left !important;}
 }
 
 
+.nosc_on  {display: block ;}
+.nosc_off {display: none ;}
+
+
+#select
+{display: none ;}
 
 
 
 
 
 
+/* 新着情報 
+.top_tab , .el_searchResult{display: none;}*/
 
-
-/* 新着情報 */
-.top_tab , .el_searchResult{display: none;}
-
-/* お知らせ一覧 */
+/* お知らせ一覧 
 .bl_selectBlock{display: none;}
-.js_target{ display: block;}
+.js_target{ display: block;}*/
 
-/*年度のタブ切り替え*/
+/*年度のタブ切り替え
 .topix_tab .tab-list{ display: none;}
-.topix_tab .tab-contents{display: block;}
+.topix_tab .tab-contents{display: block;}*/
 
-/* 担当課からのお知らせ */
+/* 担当課からのお知らせ 
 .pickup_box ul li{clear: both !important;}
-.pickup_photo2{float: left !important;vertical-align: top;width:80px;height: auto;border : 1px solid #bbbbbb;box-shadow: none;margin:5px;}
+.pickup_photo2{float: left !important;vertical-align: top;width:80px;height: auto;border : 1px solid #bbbbbb;box-shadow: none;margin:5px;}*/
 
-/* サイトマップ */
-.sitemap{margin:10px 10px -5px 0px;width:auto;height:26px;}
+/* サイトマップ 
+.sitemap{margin:10px 10px -5px 0px;width:auto;height:26px;}*/
 
-/* お知らせ一覧 絞り込み検索 */
-.release_form , .tab-list{display: none;}
+/* お知らせ一覧 絞り込み検索 
+.release_form , .tab-list{display: none;}*/
 
-/* 政策 ヘッド アイコン&画像 */
-.top_icon{width:26px; height:auto;}
+/* 政策 ヘッド アイコン&画像 
+.top_icon{width:26px; height:auto;}*/
 
-/* 様式 */
-.yo_table th , .yo_table td{ vertical-align:top !important;text-align: left !important;}
+/* 様式 
+.yo_table th , .yo_table td{ vertical-align:top !important;text-align: left !important;}*/
 
-/* サムネイル付きリスト 2種類 */
+/* サムネイル付きリスト 2種類 
 .thumli_l .yoko , .thumli_s .yoko {margin-left:20px;width:300px !important;height:auto;border : 1px solid #bbbbbb;}
-.thumli_l .tate , .thumli_s .tate {margin:0 80px;width:160px !important;height:auto;border : 1px solid #bbbbbb;}
+.thumli_l .tate , .thumli_s .tate {margin:0 80px;width:160px !important;height:auto;border : 1px solid #bbbbbb;}*/
 
