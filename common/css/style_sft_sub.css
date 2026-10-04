@@ -749,6 +749,13 @@ aside .btn-flat-border {
     grid-column: span 1;
     grid-row: span 1;
   }
+  .brand-grid .item .overlay {
+    background: rgba(0,0,0,0.2);
+  }
+  .brand-grid .item .title {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .brand-grid .brand-grid {
