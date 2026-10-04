@@ -32,17 +32,24 @@
   <link rel="stylesheet" href="/common/css/style_sft.css">
   <link rel="stylesheet" href="/common/css/splide.min.css">
   <link rel="stylesheet" href="/common/css/style_sft_sub.css">
-  <noscript><link rel="stylesheet" href="/common/css/noscript_sft.css"></noscript>
+  <noscript><link rel="stylesheet" href="/common/css/noscript_sft.css"><style>.l-header{opacity:1 !important;}</style></noscript>
   <!-- page_style_area_beginning -->
-  <style>body{visibility:hidden;} #loading{visibility:visible;}</style>
+  <style>.l-header{opacity:0;}</style>
   <!-- page_style_area_end -->
 </head>
 
 <body id="page-top">
   <div id="loading"><div class="spinner"></div></div>
   <header class="l-header">
+    <noscript>
+      <div class="nosc">
+        <p><strong>このブラウザはJavaScriptが無効になっているかサポートされていないようです。</strong></p>
+        <p>全ての機能を利用するためにはブラウザの設定でJavaScriptを有効にしてください。このままお使いいただく場合は、グランドナビゲーターが表示されませんので、サイトナビゲーションにはトップページまたはサイトマップをご利用ください。</p>
+        <ul class="link_ul row_f"><li><a href="/">トップページ</a></li><li><a href="/sitemap/">サイトマップ</a></li></ul>
+      </div>
+    </noscript>
     <div class="header_inner">
-      <a href="/" class="header_logo"><img src="/common/img/logo.png" width="440" height="72" alt="セトラスフードテックロゴ"></a>
+      <a href="/" class="header_logo"><img src="/common/img/logo.png" width="440" height="103" alt="セトラスフードテックロゴ"></a>
       <!--script src="/common/js/header_footer_sft.js"></script><script>header_a();</script-->
       <!--js_header_a-->
       <!--トップメニュー PC-->
@@ -89,7 +96,6 @@
                   <li class="p-megaMenu__list-item"><a href="/services/food_service/">Food Service<span class="s_font">（弁当、社員食堂）</span></a></li>
                   <li class="p-megaMenu__list-item"><a href="/services/local_specialties/">Local Specialties<span class="s_font">（特産品）</span></a></li>
                   <li class="p-megaMenu__list-item"><a href="/services/partnerse/">Partners<span class="s_font">（受託運営、事業連携）</span></a></li>
-                  <!--li class="p-megaMenu__list-item"><a href="/services/creative/">Creative<span class="s_font">（クリエイティブ）</span></a></li-->
                 </ul>
               </div>
               <p><span class="p-megaMenu__close">close</span></p>
@@ -171,7 +177,6 @@
                   <li><a href="/services/food_service/">Food Service<span class="s_font">（弁当、社員食堂）</span></a></li>
                   <li><a href="/services/local_specialties/">Local Specialties<span class="s_font">（特産品）</span></a></li>
                   <li><a href="/services/partnerse/">Partners<span class="s_font">（受託運営、事業連携）</span></a></li>
-                  <!--li><a href="/services/creative/">Creative<span class="s_font">（クリエイティブ）</span></a></li-->
                 </ul>
               </details>
               <details class="accordion">
@@ -206,13 +211,7 @@
     </div><!--drawer-menu-->
     <!--js_header_b-->
     
-    <noscript>
-      <div class="nosc">
-        <p><strong>このブラウザはJavaScriptが無効になっているかサポートされていないようです。</strong></p>
-        <p>全ての機能を利用するためにはブラウザの設定でJavaScriptを有効にしてください。このままお使いいただく場合は、グランドナビゲーターが表示されませんので、サイトナビゲーションにはフッターまたはサイトマップをご利用ください。</p>
-        <ul class="link_ul row_f"><li><a href="/index.html#f_site_map">トップページフッター</a></li><li><a href="/sitemap/">サイトマップ</a></li></ul>
-      </div>
-    </noscript>
+
     <hr class="print">
   </header>
 
@@ -222,8 +221,6 @@
       <div class="hero-text more2">
         <h1>四国の&#12304;おいしい&#12305;を未来へ</h1>
         <p>食から始まる地域創生</p>
-        <!--h1>四国の食と文化をつなぎ、地域の未来を創造する</h1>
-        <p>選び抜かれた食や特産品を通じて、四国の魅力を全国へ届けます</p-->
       </div>
       <noscript><h2>スライダー</h2></noscript>
       <div id="hero" class="splide" role="region" aria-label="フォトスライダー">
@@ -299,71 +296,6 @@
                 <span class="slide-caption">大西食品</span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
               </a>
             </li>
-            
-            <!--
-            <li class="splide__slide">
-              <a href="/services/dining/#setona" class="slide-link">
-                <img src="/common/img/setona/hero.jpg" alt="瀬to菜スライダー画像" width="960" height="410">
-                <span class="slide-caption">創作和食 瀬to菜</span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
-              </a>
-            </li>
-
-            <li class="splide__slide">
-              <a href="/services/partnerse/#landmark" class="slide-link">
-                <img src="/common/img/landmark/hero.jpg" alt="高松三越ランドマークスライダー画像" width="960" height="410">
-                <span class="slide-caption">高松三越ランドマーク</span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
-              </a>
-            </li>
-
-            <li class="splide__slide">
-              <a href="/services/partnerse/#maocafe" class="slide-link">
-                <img src="/common/img/maocafe/hero.jpg" alt="まおかふぇスライダー画像" width="960" height="410">
-                <span class="slide-caption">まおかふぇ</span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
-              </a>
-            </li>
-
-            <li class="splide__slide">
-              <a href="/services/partnerse/#cafe-de-ritsurin" class="slide-link">
-                <img src="/common/img/cafe-de-ritsurin/hero.jpg" alt="Cafe de Ritsurinスライダー画像" width="960" height="410">
-                <span class="slide-caption">Cafe de Ritsurin<span class="s_font">（カフェ・ド・リツリン）</span></span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
-              </a>
-            </li>
-
-            <li class="splide__slide">
-              <a href="/services/partnerse/#burger-king" class="slide-link">
-                <img src="/common/img/burger-king/hero.jpg" alt="バーガーキングスライダー画像" width="960" height="410">
-                <span class="slide-caption">バーガーキング&#174;</span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
-              </a>
-            </li>
-
-            <li class="splide__slide">
-              <a href="/services/partnerse/#sawee-syokudou" class="slide-link">
-                <img src="/common/img/sawee-syokudou/hero.jpg" alt="サウィ食堂スライダー画像" width="960" height="410">
-                <span class="slide-caption">サウィ食堂</span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
-              </a>
-            </li>
-
-            <li class="splide__slide">
-              <a href="/services/local_specialties/#shikoku-arcade" class="slide-link">
-                <img src="/common/img/shikoku-arcade/hero.jpg" alt="しこくあーけーどスライダー画像" width="960" height="410">
-                <span class="slide-caption">しこくあーけーど&#174;</span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
-              </a>
-            </li>
-
-            <!--li class="splide__slide">
-              <a href="/services/creative_works/#tao">
-                <img src="/common/img/tao/hero.jpg" alt="tao.スライダー画像" width="960" height="410">
-                <span class="slide-caption">tao.</span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
-              </a>
-            </li>
-            -->
-
-            <li class="splide__slide">
-              <a href="/about/message/" class="slide-link">
-                <img src="/common/img/setolas-foodtech/hero.jpg" alt="セトラスフードテック画像" width="960" height="410">
-                <span class="slide-caption">セトラスフードテック</span><span class="slide-ui"><span class="btn">詳細を見る</span></span>
-              </a>
-            </li>
 
           </ul>
         </div>
@@ -381,14 +313,13 @@
       <h2 class="s_ttl fadein fadein-bottom"><span class="s_ttl1">Services</span><span class="s_ttl2">サービス</span></h2>
       <div class="inner">
 
-        <ul class="card_link fadein fadein-bottom">
-          <li class="inactive"><a href="/services/dining/"><img src="/common/img/dining.jpg" width="300" height="200" alt="食事画像"><img src="/common/img/c1.png" alt="お食事アイコン" width="28" height="28" class="c_icon"><span><strong>Dining</strong></span><span>食事</span></a></li>
-          <li class="inactive"><a href="/services/cafe/"><img src="/common/img/cafe.jpg" width="300" height="200" alt="カフェ画像"><img src="/common/img/c2.png" alt="カフェアイコン" width="28" height="28" class="c_icon"><span><strong>Cafe</strong></span><span>カフェ</span></a></li>
-          <li class="inactive"><a href="/services/sweets/"><img src="/common/img/sweets.jpg" width="300" height="200" alt="スイーツ画像"><img src="/common/img/c3.png" alt="スイーツアイコン" width="28" height="28" class="c_icon"><span><strong>Sweets</strong></span><span>スイーツ</span></a></li>
-          <li class="inactive"><a href="/services/food_service/"><img src="/common/img/food_service.jpg" width="300" height="200" alt="お弁当画像"><img src="/common/img/c4.png" alt="お弁当アイコン" width="28" height="28" class="c_icon"><span><strong>Food Service</strong></span><span>弁当、社員食堂</span></a></li>
-          <li class="inactive"><a href="/services/local_specialties/"><img src="/common/img/local_specialties.jpg" width="300" height="200" alt="特産品画像"><img src="/common/img/c9.png" alt="特産品アイコン" width="28" height="28" class="c_icon"><span><strong>Local Specialties</strong></span><span>特産品</span></a></li>
-          <li class="inactive"><a href="/services/partnerse/"><img src="/common/img/partnerse.jpg" width="300" height="200" alt="パートナーズ画像"><img src="/common/img/c11.png" alt="パートナーズアイコン" width="28" height="28" class="c_icon"><span><strong>Partners</strong></span><span>受託運営、事業連携</span></a></li>
-          <!--li class="inactive"><a href="/services/creative/"><img src="/common/img/creative.jpg" width="300" height="200" alt="クリエイティブ画像"><img src="/common/img/c8.png" alt="クリエイティブアイコン" width="28" height="28" class="c_icon"><span><strong>Creative</strong></span><span>クリエイティブ</span></a></li-->
+        <ul class="card_link">
+          <li class="inactive fadein fadein-bottom"><a href="/services/dining/"><img src="/common/img/i_services/dining.jpg" width="300" height="150" alt="食事画像"><img src="/common/img/i_services/c1.png" alt="お食事アイコン" width="28" height="28" class="c_icon"><span><strong>Dining</strong></span><span>食事</span></a></li>
+          <li class="inactive fadein fadein-bottom"><a href="/services/cafe/"><img src="/common/img/i_services/cafe.jpg" width="300" height="150" alt="カフェ画像"><img src="/common/img/i_services/c2.png" alt="カフェアイコン" width="28" height="28" class="c_icon"><span><strong>Cafe</strong></span><span>カフェ</span></a></li>
+          <li class="inactive fadein fadein-bottom"><a href="/services/sweets/"><img src="/common/img/i_services/sweets.jpg" width="300" height="150" alt="スイーツ画像"><img src="/common/img/i_services/c3.png" alt="スイーツアイコン" width="28" height="28" class="c_icon"><span><strong>Sweets</strong></span><span>スイーツ</span></a></li>
+          <li class="inactive fadein fadein-bottom"><a href="/services/food_service/"><img src="/common/img/i_services/food_service.jpg" width="300" height="150" alt="お弁当画像"><img src="/common/img/i_services/c4.png" alt="お弁当アイコン" width="28" height="28" class="c_icon"><span><strong>Food Service</strong></span><span>弁当、社員食堂</span></a></li>
+          <li class="inactive fadein fadein-bottom"><a href="/services/local_specialties/"><img src="/common/img/i_services/local_specialties.jpg" width="300" height="150" alt="特産品画像"><img src="/common/img/i_services/c9.png" alt="特産品アイコン" width="28" height="28" class="c_icon"><span><strong>Local Specialties</strong></span><span>特産品</span></a></li>
+          <li class="inactive fadein fadein-bottom"><a href="/services/partnerse/"><img src="/common/img/i_services/partnerse.jpg" width="300" height="150" alt="パートナーズ画像"><img src="/common/img/i_services/c11.png" alt="パートナーズアイコン" width="28" height="28" class="c_icon"><span><strong>Partners</strong></span><span>受託運営、事業連携</span></a></li>
         </ul>
 
         <div class="brand-grid">
@@ -456,71 +387,6 @@
             </div>
           </a>
 
-          <!--
-          <a href="/services/dining/#setona" class="item fadein fadein-bottom">
-            <img src="/common/img/setona/grid.jpg" alt="瀬to菜画像グリッド" width="200" height="200">
-            <div class="overlay">
-              <span class="title">創作和食 瀬to菜<span class="sub">（和食）</span></span>
-            </div>
-          </a>
-
-          <a href="/services/partnerse/#landmark" class="item fadein fadein-bottom">
-            <img src="/common/img/landmark/grid.jpg" alt="高松三越ランドマーク画像グリッド" width="200" height="200">
-            <div class="overlay">
-              <span class="title">高松三越ランドマーク<span class="sub">（レストラン）</span></span>
-            </div>
-          </a>
-
-          <a href="/services/partnerse/#maocafe" class="item fadein fadein-bottom">
-            <img src="/common/img/maocafe/grid.jpg" alt="まおかふぇ画像グリッド" width="200" height="200">
-            <div class="overlay">
-              <span class="title">まおかふぇ<span class="sub">（カフェ）</span></span>
-            </div>
-          </a>
-
-          <a href="/services/partnerse/#cafe-de-ritsurin" class="item fadein fadein-bottom">
-            <img src="/common/img/cafe-de-ritsurin/grid.jpg" alt="Cafe de Ritsurin画像グリッド" width="200" height="200">
-            <div class="overlay">
-              <span class="title">Cafe de Ritsurin<span class="sub">（カフェ）</span></span>
-            </div>
-          </a>
-
-          <a href="/services/partnerse/#burger-king" class="item fadein fadein-bottom">
-            <img src="/common/img/burger-king/grid.jpg" alt="バーガーキング画像グリッド" width="200" height="200">
-            <div class="overlay">
-              <span class="title">バーガーキング&#174;<span class="sub">（ファストフード）</span></span>
-            </div>
-          </a>
-
-          <a href="/services/partnerse/#sawee-syokudou" class="item fadein fadein-bottom">
-            <img src="/common/img/sawee-syokudou/grid.jpg" alt="サウィ食堂画像グリッド" width="200" height="200">
-            <div class="overlay">
-             <span class="title">サウィ食堂<span class="sub">（韓国料理）</span></span>
-            </div>
-          </a>
-
-          <a href="/services/local_specialties/#shikoku-arcade" class="item fadein fadein-bottom">
-            <img src="/common/img/shikoku-arcade/grid.jpg" alt="しこくあーけーど画像グリッド" width="200" height="200">
-            <div class="overlay">
-              <span class="title">しこくあーけーど&#174;<span class="sub">（情報発信）</span></span>
-            </div>
-          </a>
-
-          <a href="/services/creative/#futurecreate" class="item fadein fadein-bottom">
-            <img src="/common/img/setolas-future-create/grid.jpg" alt="tao画像グリッド" width="200" height="200">
-            <div class="overlay">
-              <span class="title">セトラスフューチャークリエイト<span class="sub">（マーケティング企画）</span></span>
-            </div>
-          </a>
-
-          <a href="/services/creative/#tao" class="item fadein fadein-bottom">
-            <img src="/common/img/tao/grid.jpg" alt="tao画像グリッド" width="200" height="200">
-            <div class="overlay">
-              <span class="title">tao.<span class="sub">（デザイン）</span></span>
-            </div>
-          </a>
-          -->
-
         </div>
         
         <a href="/services/" class="btn-flat-border fadein fadein-bottom">カテゴリ、サービス一覧</a>
@@ -532,54 +398,20 @@
       <h2 class="s_ttl fadein fadein-bottom"><span class="s_ttl1">News</span><span class="s_ttl2">新着情報</span></h2>
       <div class="inner">
         <div class="ff_frame">  
-          <!--table id="news-top" class="release_table news-table">
-            <thead>
-              <tr>
-                <th scope="col">掲載日</th>
-                <th scope="col">カテゴリ</th>
-                <th scope="col">タグ</th>
-              </tr>
-            </thead>
-            <tbody id="latest-news-body"></tbody>
-          </table-->
-
           <table id="news-list" class="release_table news-table">
             <thead><tr><th scope="col">掲載日</th><th scope="col">カテゴリ</th><th scope="col">タグ</th></tr></thead>
             <tbody class="list">
 
+            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_d" data-location="tag_all,tag0102"><th scope="row">2026年10月5日</th><td><span class="tag_d">お知らせ</span><span class="tag0102">セトラスフューチャークリエイト</span></td><td><a href="/news/20261005a/">社内連絡：サイト制作進捗をお知らせします（No.7）（10月5日）</a></td></tr>
             <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_d" data-location="tag_all,tag0102"><th scope="row">2026年9月28日</th><td><span class="tag_d">お知らせ</span><span class="tag0102">セトラスフューチャークリエイト</span></td><td><a href="/news/20260928a/">社内連絡：サイト制作進捗をお知らせします（No.6）（9月28日）</a></td></tr>
             <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_d" data-location="tag_all,tag0102"><th scope="row">2026年9月18日</th><td><span class="tag_d">お知らせ</span><span class="tag0102">セトラスフューチャークリエイト</span></td><td><a href="/news/20260918a/">社内連絡：サイト制作進捗をお知らせします（No.5）（9月18日）</a></td></tr>
             <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_d" data-location="tag_all,tag0102"><th scope="row">2026年9月11日</th><td><span class="tag_d">お知らせ</span><span class="tag0102">セトラスフューチャークリエイト</span></td><td><a href="/news/20260911a/">社内連絡：サイト制作進捗をお知らせします（No.4）（9月11日）9月15日更新</a></td></tr>
             <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_d" data-location="tag_all,tag0102"><th scope="row">2026年9月4日</th><td><span class="tag_d">お知らせ</span><span class="tag0102">セトラスフューチャークリエイト</span></td><td><a href="/news/20260904a/">社内連絡：サイト制作進捗をお知らせします（No.3）（9月4日） 9月8日更新</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_d" data-location="tag_all,tag0102"><th scope="row">2026年8月28日</th><td><span class="tag_d">お知らせ</span><span class="tag0102">セトラスフューチャークリエイト</span></td><td><a href="/news/20260828a/">社内連絡：サイト制作進捗をお知らせします（No.2）（8月28日）</a></td></tr>
-
-
-<!--
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_a" data-location="tag_all,tag0101"><th scope="row">2026年8月26日</th><td><span class="tag_a">新メニュー </span><span class="tag0101">フードテック</span></td><td><a href="/news/20260826a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_b" data-location="tag_all,tag0102"><th scope="row">2026年8月27日</th><td><span class="tag_b">キャンペーン</span><span class="tag0102">フューチャークリエイト</span></td><td><a href="/news/20260827a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_c" data-location="tag_all,tag0201"><th scope="row">2026年8月28日</th><td><span class="tag_c">店舗情報</span><span class="tag0201">バーガーキング&#174;</span></td><td><a href="/news/20260828b/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_d" data-location="tag_all,tag0202"><th scope="row">2026年8月29日</th><td><span class="tag_d">お知らせ</span><span class="tag0202">瀬to菜</span></td><td><a href="/news/20260829a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_e" data-location="tag_all,tag0203"><th scope="row">2026年8月30日</th><td><span class="tag_e">プレスリリース</span><span class="tag0203">割烹 匠</span></td><td><a href="/news/20260830a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_f" data-location="tag_all,tag0204"><th scope="row">2026年8月31日</th><td><span class="tag_f">採用情報</span><span class="tag0204">ハーモニーフーズ</span></td><td><a href="/careers/jobs/20260831a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_a" data-location="tag_all,tag0205"><th scope="row">2026年9月1日</th><td><span class="tag_a">新メニュー </span><span class="tag0205">サウィ食堂</span></td><td><a href="/news/20260901b/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_b" data-location="tag_all,tag0206"><th scope="row">2026年9月2日</th><td><span class="tag_b">キャンペーン</span><span class="tag0206">高松三越ランドマーク</span></td><td><a href="/news/20260902a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_c" data-location="tag_all,tag0301"><th scope="row">2026年9月3日</th><td><span class="tag_c">店舗情報</span><span class="tag0301">Passerelle</span></td><td><a href="/news/20260903a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_d" data-location="tag_all,tag0302"><th scope="row">2026年9月4日</th><td><span class="tag_d">お知らせ</span><span class="tag0302">Cafe de Ritsurin</span></td><td><a href="/news/20260904a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_e" data-location="tag_all,tag0303"><th scope="row">2026年9月5日</th><td><span class="tag_e">プレスリリース</span><span class="tag0303">Maison de CIELetMER</span></td><td><a href="/news/20260905a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_f" data-location="tag_all,tag0304"><th scope="row">2026年9月6日</th><td><span class="tag_f">採用情報</span><span class="tag0304">旧南原邸</span></td><td><a href="/careers/jobs/20260906a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_a" data-location="tag_all,tag0305"><th scope="row">2026年9月7日</th><td><span class="tag_a">新メニュー </span><span class="tag0305">おもちゃ美術館 café</span></td><td><a href="/news/20260907a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_b" data-location="tag_all,tag0306"><th scope="row">2026年9月8日</th><td><span class="tag_b">キャンペーン</span><span class="tag0306">まおかふぇ</span></td><td><a href="/news/20260908a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_c" data-location="tag_all,tag0401"><th scope="row">2026年9月9日</th><td><span class="tag_c">店舗情報</span><span class="tag0401">しこくあーけーど&#174;</span></td><td><a href="/news/20260909a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_d" data-location="tag_all,tag0402"><th scope="row">2026年9月10日</th><td><span class="tag_d">お知らせ</span><span class="tag0402">蒼のダイヤ</span></td><td><a href="/news/20260910a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_e" data-location="tag_all,tag0403"><th scope="row">2026年9月11日</th><td><span class="tag_e">プレスリリース</span><span class="tag0403">大西食品</span></td><td><a href="/news/20260911a/">表示テスト</a></td></tr>
-            <tr class="bl_searchResultBlock_item js_target" data-type="tag_all,tag_f" data-location="tag_all,tag0501"><th scope="row">2026年9月12日</th><td><span class="tag_f">採用情報</span><span class="tag0501">tao.</span></td><td><a href="/careers/jobs/20260912a/">表示テスト</a></td></tr>
--->
-
 
             </tbody>
           </table>
 
-          <a href="/news/" class="btn-flat-border fadein fadein-bottom">新着一覧</a>
+          <a href="/news/" class="btn-flat-border fadein fadein-bottom">新着情報一覧</a>
 
         </div><!-- ff_frame -->
 
@@ -659,7 +491,7 @@
         <div class="f_logo">
           <div class="corporate_logo">
             <ul>
-              <li><a href="/"><img src="/common/img/logo.png" alt="フッターロゴ" width="440" height="72"></a></li>
+              <li><a href="/"><img src="/common/img/logo.png" alt="フッターロゴ" width="440" height="103"></a></li>
             </ul>
           </div>
         </div><!--f_logo-->
@@ -676,7 +508,6 @@
                   <li><a href="/services/food_service/">Food Service<span class="s_font none720">（弁当、社員食堂）</span></a></li>
                   <li><a href="/services/local_specialties/">Local Specialties<span class="s_font none720">（特産品）</span></a></li>
                   <li><a href="/services/partnerse/">Partners<span class="s_font none720">（受託運営、事業連携）</span></a></li>
-                  <!--li><a href="/services/creative/">Creative<span class="s_font none720">（クリエイティブ）</span></a></li-->
                 </ul>
               </dd>
             </dl>
