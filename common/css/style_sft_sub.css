@@ -679,24 +679,9 @@ aside .btn-flat-border {
   transition: transform 0.8s ease;
 }
 
-.brand-grid .item-lg {
-  grid-column: span 3;
-  grid-row: span 2;
-}
-
-.brand-grid .item-md {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.brand-grid .item-ms {
-  grid-column: span 2;
-  grid-row: span 1;
-}
-
 .brand-grid .overlay {
   position: absolute;
-  inset: 0;
+  inset: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -749,17 +734,15 @@ aside .btn-flat-border {
     grid-column: span 1;
     grid-row: span 1;
   }
-  .brand-grid .item .overlay {
-    background: rgba(0,0,0,0.2);
+
+  .brand-grid .item img {
+    filter: brightness(75%);
   }
+
   .brand-grid .item .title {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.brand-grid .brand-grid {
-  grid-auto-flow: dense;
 }
 
 @media (max-width: 960px) {
@@ -1907,6 +1890,14 @@ ul.keywords2 {
 
 /* ------------------------------ お知らせ一覧 絞り込み ------------------------------- */
 
+summary.news {
+  padding: 0.5rem ;
+  cursor: pointer;
+  background-color: rgba(0, 140, 207, 0.04);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 .js_target {
   display: none;
 }
@@ -1917,7 +1908,7 @@ ul.keywords2 {
 
 .bl_selectBlock {
   margin: 30px 0 20px;
-  padding: 30px;
+  padding: 20px;
   border: 1px solid rgba(220,220,220,1);
   border-radius: 15px;
   background: rgba(253,253,253,.9);
@@ -1984,12 +1975,13 @@ ul.keywords2 {
 
 .el_searchResult {
   margin: 15px 3px;
+  font-weight:bold;
 }
 
 @media screen and (max-width: 960px) {
 
   .bl_selectBlock {
-    padding: 20px 15px;
+    padding: 15px;
     margin-bottom: 30px;
   }
 
@@ -1998,15 +1990,23 @@ ul.keywords2 {
   }
 }
 
-@media screen and (max-width: 480px) {
 
-  .bl_selectBlock {
-    padding: 20px 10px;
-    margin-bottom: 30px;
-  }
+@media screen and (max-width: 720px) {
 
   .bl_selectBlock_content {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .bl_selectBlock {
+    padding: 10px;
+  }
+
+  .bl_selectBlock_content {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
