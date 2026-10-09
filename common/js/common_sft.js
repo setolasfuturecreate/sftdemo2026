@@ -262,7 +262,7 @@ query = urlParams.get("q");
 
 // SNSシェア機能---------------------------------------------------------------------
 (function () {
-  var base = "https://setolasfoodtech.com/";
+  var base = "https://setolasfoodtech.com";
 
   var fullPath = location.pathname;
 
