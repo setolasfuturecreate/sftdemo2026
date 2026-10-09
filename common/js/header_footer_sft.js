@@ -431,13 +431,13 @@ function logo_name(){
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const DOMAIN = "setolas.co.jp";
+  const DOMAIN = "setolasfoodtech.com";
 
   const mailMap = {
-    "js-mail-c": "contact-sfc",
-    "js-mail-p": "policy-sfc",
+    "js-mail-c": "contact",
+    "js-mail-p": "policy",
     "js-mail-r": "recruit",
-    "js-mail-s": "sales-sfc",
+//    "js-mail-s": "sales-sfc",
   };
 
   Object.keys(mailMap).forEach(className => {
