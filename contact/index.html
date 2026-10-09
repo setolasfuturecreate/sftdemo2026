@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="/common/css/style_sft_sub.css">
   <noscript><link rel="stylesheet" href="/common/css/noscript_sft.css"><style>.l-header{opacity:1 !important;}</style></noscript>
   <!-- page_style_area_beginning -->
-  <style>.l-header{opacity:0;}</style>
+  <style>.l-header{opacity:0;} dl , dl li{margin-top:0!important;font-weight:bold;}</style>
   <!-- page_style_area_end -->
 </head>
 
@@ -81,63 +81,61 @@
         </p>
       </header>
 
-      <section class="section_body template">
-
-        <h2 class="title">必要事項をご入力し、送信してください</h2>
-        <p>お問い合わせいただいた内容には、通常1週間（5営業日）以内を目安にご連絡いたします。</p>
-        <p>なお、内容によってはお時間をいただく場合や、営業、宣伝を目的としたお問い合わせには返信いたしかねる場合がございますので、あらかじめご了承ください。</p>
-        <p>ご入力いただいた個人情報は、連絡の目的にのみ利用し、ご本人の同意なく第三者へ開示、提供することはありません。</p>
-
-        <div class="form-wrap">
-
-          <form name="contact" method="POST" data-netlify="true" action="/contact/thanks/">
-            <input type="hidden" name="form-name" value="contact">
-
-            <div class="form-group">
-              <label for="name">
-                お名前<span class="required">※ 必須</span>
-              </label>
-              <input id="name" name="name" type="text" required aria-required="true" autocomplete="name">
-            </div>
-
-            <div class="form-group">
-              <label for="email">
-                E-mailアドレス<span class="required">※ 必須</span>
-              </label>
-              <input id="email" name="email" type="email" placeholder="sample@example.com" required aria-required="true" autocomplete="email">
-            </div>
-
-            <div class="form-group">
-              <label for="tel">
-                電話番号
-              </label>
-              <input id="tel" name="tel" type="tel" placeholder="090-1234-5678" autocomplete="tel">
-            </div>
-
-            <div class="form-group">
-              <label for="type">
-                お問い合わせ種別<span class="required">※ 必須</span>
-              </label>
-              <select id="type" name="type" required aria-required="true">
-                <option value="">選択してください</option>
-                <option value="お問い合わせ">お問い合わせ</option>
-                <option value="採用について">採用について</option>
-                <option value="その他">その他</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">
-                内容（具体的に）<span class="required">※ 必須</span>
-              </label>
-              <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-            </div>
-
-            <button type="submit" class="btn-flat-border">送信する</button>
-          </form>
-
+      <nav class="toc" aria-label="目次">
+        <div class="pglink">
+        <h2 class="toc-title is-visually-subtle">目次</h2>
+          <ul class="link_ul_d row_f">
+            <li><a href="#section_01">お問い合わせの前に</a></li>
+            <li><a href="#section_02">E-mailによるお問い合わせ</a></li>
+            <li><a href="#section_03">その他の連絡方法</a></li>
+          </ul>
         </div>
+      </nav>
 
+      <section id="section_01" class="section_mini template">
+        <h2 class="title">お問い合わせの前に</h2>
+        <p>店舗や各サービスの詳細情報や、営業時間や定休日、ご予約、その他サービス内容のお問い合わせは、各店舗へご連絡ください。</p>
+        <p>よくあるご質問をまとめてありますので、お問い合わせの前にお読みください。</p>
+        <p>なお、お寄せいただいた個人情報は、お問い合わせへの対応および関連するご連絡のために利用します。（詳しくはプライバシーポリシーをご確認ください。）</p>
+        <ul class="link_ul row_1">
+          <li><a href="/setolasfoodtech.com/services/">カテゴリ、サービス一覧</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/policy/privacy-policy/">プライバシーポリシー</a></li>
+        </ul>
+      </section>
+
+      <section id="section_02" class="section_mini template">
+        <h2 class="title">E-mailによるお問い合わせ</h2>
+        <h3 class="title">送信先など</h3>
+        <p>お問い合わせは、原則的にE-mailにて受付いたしますので、必要事項を記載のうえ、送信してください。</p>
+        <p>送信先や記載内容に誤りがないかご確認ください。</p>
+        <div class="group_frame">
+          <dl class="dl_flex dt4">
+            <dt>送信先</dt><dd><span class="js-mail-c"></span></dd>
+            <dt>件名</dt><dd>&#x25CB;&#x25CB;に関するお問い合わせ</dd>
+            <dt>本文</dt><dd><ul class="default"><li>お名前</li><li>E-mailアドレス</li><li>お電話番号（任意）</li><li>お問い合わせ内容を具体的にお書きください</li></ul></dd>
+          </dl>
+        </div>
+        <h3 class="title">回答について</h3>
+        <ul class="default">
+          <li>お問い合わせいただいた内容には、原則として5営業日以内にご返信いたします。</li>
+          <li>迷惑メール対策等により受信制限を設定されている場合は、当社からのメールを受信できるよう設定をお願いいたします。</li>
+          <li>営業や勧誘を目的としたものなど、お問い合わせ内容によっては、ご回答を差し控えさせていただく場合がありますので、あらかじめご了承ください。</li>
+        </ul>
+      </section>
+
+      <section id="section_03" class="section_mini template">
+        <h2 class="title">その他の連絡方法</h2>
+        <h3 class="title">郵便、電話、FAXでの連絡先</h3>
+        <p>E-mailでのご連絡が難しい場合は、次の連絡先へお願いいたします。</p>
+        <div class="group_frame">
+          <dl class="dl_flex dt4">
+            <dt>事業所名</dt><dd>セトラスフードテック株式会社</dd>
+            <dt>所在地</dt><dd>〒760-0026 香川県高松市磨屋町8番地1 セトラスビル</dd>
+            <dt>電話</dt><dd>087-826-6610（平日の9時から16時まで）</dd>
+            <dt>FAX</dt><dd>087-826-6616</dd>
+          </dl>
+        </div>
       </section>
 
       <!--aside class="article-meta">
