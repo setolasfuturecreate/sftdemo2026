@@ -2184,12 +2184,12 @@ input[type=checkbox]:indeterminate:after {
 
 .release_table tbody tr th {
   width: 8.8rem;
-  padding: 30px 5px;
+  padding: 30px 3px;
 }
 
 .release_table tbody tr td:nth-child(2) {
-  width: 18.5rem;
-  padding-top: 27px;
+  width : 16.8rem;
+  padding: 27px 3px 0 3px;
 }
 
 .release_table tbody tr td:nth-child(3) {
@@ -2279,6 +2279,7 @@ input[type=checkbox]:indeterminate:after {
 .release_table .tag1001 , .release_table .tag1002 , .release_table .tag1003 , .release_table .tag1004 , .release_table .tag1005 , .release_table .tag1006 , .release_table .tag1007 , .release_table .tag1008 , .release_table .tag1009 , .release_table .tag1010 
 {
   display: inline-block !important;
+  overflow: hidden;
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 3px 0;
@@ -2287,6 +2288,8 @@ input[type=checkbox]:indeterminate:after {
   text-align: center;
   text-justify: auto;
   border-radius: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 
