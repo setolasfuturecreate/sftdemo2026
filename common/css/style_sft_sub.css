@@ -3193,6 +3193,7 @@ div.qa_c {
   color: rgb(51,51,51);
   cursor: pointer;
   background-color: rgba(0,140,207,.04);
+  text-align: left;
 }
 
 .qa summary::before,
