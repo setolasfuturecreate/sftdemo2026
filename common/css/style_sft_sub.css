@@ -3185,8 +3185,8 @@ div.qa_c {
 
 .qa summary {
   display: block;
-  justify-content: space-between;
-  align-items: center;
+  justify-content  space-between;
+  align-items  center;
   position: relative;
   z-index: 1;
   padding: 1rem 2rem 1rem 6rem;
@@ -3214,6 +3214,9 @@ div.qa_c {
   border-left: 5px solid rgb(0,140,207);
 }
 
+
+
+/*
 .qa summary::after {
   content: "";
   width: 10px;
@@ -3229,6 +3232,34 @@ div.qa_c {
 .qa[open] summary::after {
   transform: rotate(225deg);
 }
+
+*/
+
+
+.qa summary::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid rgb(0,140,207);
+  border-bottom: 3px solid rgb(0,140,207);
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform .5s;
+}
+
+.qa[open] summary::after {
+  transform: translateY(-50%) rotate(225deg);
+}
+
+
+
+
+
+
+
+
 
 .qa .qaa {
   display: block;
