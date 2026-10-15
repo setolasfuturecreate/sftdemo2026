@@ -1727,10 +1727,6 @@ ul.brand-card img {
 */
 @media (max-width: 720px) {
 
-  .gallery {
-    margin: 0 20px;
-  }
-
   .gallery.brands-4,
   .gallery.news-1,
   .gallery.news-2,
