@@ -66,7 +66,7 @@ function header_a(){
             </nav>\
           </li>\
           <li class="js-megaMenu p-navigation-global__list-item p-megaMenu">\
-            <button type="button" class="js-button-megaMenu p-megaMenu__open">About</button>\
+            <button type="button" class="js-button-megaMenu p-megaMenu__open" accesskey="s" tabindex="0">About</button>\
             <nav class="p-megaMenu__navigation" aria-label="企業情報のサブメニュー">\
               <div class="header_inner">\
                 <span class="p-megaMenu__list_title">About<span class="m_font">（企業情報）</span></span>\
