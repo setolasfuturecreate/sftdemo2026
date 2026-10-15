@@ -1333,7 +1333,7 @@ ul.brand-card img {
 
 .logo_name {
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 50px 20px;
   margin: 20px 0 80px;
 }
@@ -1387,7 +1387,7 @@ ul.brand-card img {
 
 @media (max-width: 960px) {
   .logo_name {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
