@@ -3184,7 +3184,7 @@ div.qa_c {
 }
 
 .qa summary {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -3193,7 +3193,7 @@ div.qa_c {
   color: rgb(51,51,51);
   cursor: pointer;
   background-color: rgba(0,140,207,.04);
-  text-align: left;
+  text-align  left;
 }
 
 .qa summary::before,
