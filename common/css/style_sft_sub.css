@@ -2193,7 +2193,6 @@ input[type=checkbox]:indeterminate:after {
 }
 
 .release_table tbody tr td:nth-child(3) {
-  width: 60%;
   padding: 30px 2px;
 }
 
@@ -2456,7 +2455,7 @@ input[type=checkbox]:indeterminate:after {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin: 20px;
+  margin 20px;
   list-style-type: none;
 }
 
@@ -2477,9 +2476,9 @@ input[type=checkbox]:indeterminate:after {
   width: 100%;
   height: auto;
   margin: 0;
-  border-radius: 15px;
-  box-shadow: 6px 6px 12px rgb(197,197,197),
-              -6px -6px 12px rgb(255,255,255);
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgb(197,197,197),
+              -3px -3px 6px rgb(255,255,255);
 }
 
 @media screen and (max-width: 720px) {
