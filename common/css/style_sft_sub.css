@@ -3236,6 +3236,22 @@ div.qa_c {
 */
 
 
+
+.qa summary {
+  list-style: none;
+}
+
+.qa summary::-webkit-details-marker {
+  display: none;
+}
+
+.qa summary::marker {
+  display: none;
+  content: "";
+}
+
+
+
 .qa summary::after {
   content: "";
   position: absolute;
