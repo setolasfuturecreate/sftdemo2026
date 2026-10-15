@@ -1655,41 +1655,7 @@ ul.brand-card img {
 
 
 
-.gallery {
-  display: grid;
-  gap: 15px;
-  width: 100%;
-}
 
-.gallery figure {
-  margin: 0;
-  min-width: 0;
-}
-
-.gallery img {
-  width: 100%;
-  max-width: 100% !important;
-  height: auto;
-}
-
-.gallery figure {
-  margin: 0;
-  min-width: 0;
-  overflow: hidden;
-}
-
-.gallery img {
-  max-width: 100%;
-  height: auto;
-}
-
-.gallery figcaption {
-  overflow-wrap: break-word;
-}
-
-.gallery {
-  overflow-x: hidden;
-}
 
 
 
@@ -1843,6 +1809,61 @@ ul.brand-card img {
   right: 16px;
   transform: translateY(-50%);
 }
+
+
+
+
+.gallery {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+}
+
+.gallery figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 100% !important;
+  height: auto;
+}
+
+.gallery figure {
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery figcaption {
+  overflow-wrap: break-word;
+}
+
+.gallery {
+  overflow-x: hidden;
+}
+
+.gallery,
+.gallery * {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.gallery figure {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+
+
 
 
 
