@@ -1621,7 +1621,7 @@ ul.brand-card img {
   gap: 15px;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: calc(100% - 10px);
   overflow-x: hidden;
 }
 
