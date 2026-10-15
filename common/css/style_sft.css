@@ -2495,7 +2495,7 @@ dl.dl_flex.dt20 dd {
   font-size: 1.6rem;
   font-family: 'Libre Baskerville', serif;
   font-weight: bold;
-  letter-spacing: .3rem;
+  letter-spacing:  .1rem;
 }
 
 .p-megaMenu__list_title span {
