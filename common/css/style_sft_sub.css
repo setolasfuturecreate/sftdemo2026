@@ -1621,7 +1621,7 @@ ul.brand-card img {
   gap: 15px;
   margin: 0;
   padding: 0;
-  width: calc(100% - 10px);
+  width: calc(100% - 0px);
   overflow-x: hidden;
 }
 
@@ -1639,7 +1639,7 @@ ul.brand-card img {
 
 .gallery img {
   display: block;
-  width: calc(100% - 2px);
+  width: calc(100% - 0px);
   object-fit: cover;
   object-position: center;
   border: 1px solid #ddd;
@@ -1717,13 +1717,14 @@ ul.brand-card img {
   grid-template-columns: repeat(6, 1fr);
 }
 
+/*
 @media (hover: hover) and (pointer: fine) {
   .gallery img:hover {
     transform: scale(1.03);
     box-shadow: 0 4px 12px rgba(0,0,0,.08);
   }
 }
-
+*/
 @media (max-width: 720px) {
 
   .gallery {
