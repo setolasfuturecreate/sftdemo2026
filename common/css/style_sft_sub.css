@@ -1678,8 +1678,18 @@ ul.brand-card img {
   overflow: hidden;
 }
 
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
 
+.gallery figcaption {
+  overflow-wrap: break-word;
+}
 
+.gallery {
+  overflow-x: hidden;
+}
 
 
 
