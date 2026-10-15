@@ -1656,7 +1656,7 @@ ul.brand-card img {
 
 
 .gallery {
-  display: grid;
+  display: block;
   gap: 15px;
   width: 100%;
 }
