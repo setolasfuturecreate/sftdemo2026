@@ -775,14 +775,15 @@ aside .btn-flat-border {
 }
 
 .grid_box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
+  display:  grid;
+  align-items: center;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 20px;
+  padding :0 4%;
 }
 
 .grid_box .item {
-  width: calc((100% - 3 * 16px) / 4);
+  width  calc((100% - 3 * 16px) / 4);
 }
 
 .card_box .item,
@@ -875,8 +876,9 @@ aside .btn-flat-border {
 
 @media screen and (max-width:960px) {
 
-  .grid_box .item {
-    width: calc((100% - 1 * 16px) / 2);
+  .grid_box {
+    gap: 16px;
+    padding :0;
   }
 
   .card figure {
@@ -912,12 +914,17 @@ aside .btn-flat-border {
   .card_box {
     grid-template-columns: repeat(1, minmax(0,1fr));
   }
+
+  .grid_box {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+
 }
 
 @media screen and (max-width:480px) {
-  .grid_box .item {
-    width: calc((100% - 0 * 16px) / 1);
-    margin-bottom: 20px;
+  .grid_box {
+    grid-template-columns: repeat(1, minmax(0,1fr));
+    padding:15px;
   }
 }
 
