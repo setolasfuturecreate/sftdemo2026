@@ -940,7 +940,7 @@ h5 {
   border-right: 0.3rem solid rgb(0,140,207);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
 
     .link_ul li a,
     .link_ul_d li a {
@@ -959,6 +959,14 @@ h5 {
     .link_ul_d li::after {
         top: 0.96rem !important;
     }
+
+    .row_4,
+    .row_5 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
 
     .row_3,
     .row_4,
