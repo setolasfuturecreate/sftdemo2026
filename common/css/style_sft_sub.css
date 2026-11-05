@@ -1148,6 +1148,41 @@ p.aside_title:nth-child(1) {
 }
 
 
+/* ------------------------------ アイキャッチ ------------------------------- */
+
+.eye{
+  width:80%;
+  max-width:1200px;
+  height:auto;
+
+}
+
+.news-eyecatch {
+  max-width: 1200px;
+  margin: 0 auto 48px;
+}
+
+.news-eyecatch img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 720px) {
+  .news-eyecatch {
+    margin-bottom: 32px;
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-eyecatch {
+    padding-inline: 16px;
+  }
+}
+
 
 /* ------------------------------ ブランド一覧 カード ------------------------------- */
 
