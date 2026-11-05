@@ -2907,6 +2907,7 @@ input[type=checkbox]:indeterminate:after {
   overflow: hidden;
   display: block;
   border: 1px solid rgb(200,200,200);
+  border-radius: 10px;
   text-decoration: none;
 }
 
