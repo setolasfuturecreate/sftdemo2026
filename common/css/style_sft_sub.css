@@ -3042,6 +3042,18 @@ margin-bottom:20px;
 .eighth-note li:before { content: "\266A"; }
 .sankaku-b li:before { content: "\2BC6";}
 
+  ol.kakko {
+  margin:15px 0;
+  }
+  ol.kakko li {
+  list-style-type: none;
+  counter-increment: cnt;
+  margin-left:15px;
+  margin-top:15px;
+  }
+  ol.kakko li::before {
+  content: "（"counter(cnt)"）";
+  }
 
 /* ------------------------------ timeline ------------------------------- */
 
