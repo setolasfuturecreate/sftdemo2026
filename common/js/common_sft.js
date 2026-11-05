@@ -656,7 +656,8 @@ var locations = [
   [34.346642,134.050781, "高松三越ランドマーク（受託）", "restaurant", "/services/partnerse/#landmark"],
   [34.224956,133.77489, "まおかふぇ（受託）", "cafe", "/services/partnerse/#maocafe"],
   [34.328655,134.041946, "Cafe de Ritsuin（カフェ・ド・リツリン）（受託）", "cafe", "/services/partnerse/#cafe-de-ritsurin"],
-  [34.343304,134.049057, "サウィ食堂 高松店（FC加盟店）", "korean-restaurant", "/services/partnerse/#sawee-syokudou"]
+  [34.343304,134.049057, "サウィ食堂 高松店（FC加盟店）", "korean-restaurant", "/services/partnerse/#sawee-syokudou"],
+  [34.663319,133.923158, "サウィ食堂 岡山店（FC加盟店）", "korean-restaurant", "/services/partnerse/#sawee-syokudou"]
 ];
 
 // -------------------------
