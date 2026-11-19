@@ -3189,10 +3189,11 @@ margin-bottom:20px;
 
 
 .form-wrap {
-  max-width: 800px;
+  max-width  960px;
   margin: auto;
-  padding: 30px;
+  padding: 30px 20%;
   border-radius: 10px;
+  background: rgba(0,140,207,.05);
 }
 
 fieldset {
@@ -3214,7 +3215,8 @@ legend {
 .form-wrap input,
 .form-wrap textarea,
 .form-wrap select {
-  width: calc(100% - 30px);
+  display:block;
+  width: calc(100% - 0px);
   margin: 5px auto;
   padding: 12px;
   border: 1px solid #ccc;
@@ -3238,6 +3240,14 @@ legend {
   margin-left: 15px;
   font-size: 0.9rem;
   font-weight: bold;
+}
+
+@media (max-width: 960px) {
+
+  .form-wrap {
+    padding: 10px 10%;
+  }
+
 }
 
 @media (max-width: 720px) {
