@@ -18,7 +18,7 @@
   <meta property="og:description" content="セトラスフードテックの採用エントリーです。必要事項を送信し、ご応募ください。後日担当よりご連絡いたします。">
   <meta property="og:image" content="https://setolasfoodtech.com/common/img/img_ogp.jpg">
   <meta property="og:locale" content="ja-JP">
-  <meta property="twitter:card" content="summary">
+  <meta name="robots" content="noindex,nofollow"><!--👈公開するときに削除--><meta property="twitter:card" content="summary">
 
   <!-- ▼ favicon =================================================== -->
   <link rel="icon" href="https://setolasfoodtech.com/favicon.ico">
@@ -92,7 +92,7 @@
         <h2 class="toc-title is-visually-subtle">目次</h2>
           <ul class="link_ul_d row_f">
             <li><a href="#section_01">エントリーの前に</a></li>
-            <li><a href="#section_02">E-mailによるエントリー</a></li>
+            <li><a href="#section_02">エントリーフォーム</a></li>
             <li><a href="#section_03">その他の連絡方法</a></li>
           </ul>
         </div>
@@ -102,25 +102,11 @@
         <h2 class="title">エントリーの前に</h2>
         <p>弊社の仕事内容にご興味を持っていただきありがとうございます。</p>
         <p>FAQでのよくあるご質問で、採用に関する内容も記載していますので、ご一読ください。</p>
-        <p>なお、お寄せいただいた個人情報は、プライバシーポリシーに従って適切に扱います。</p>
+        <p>なお、お寄せいただいた個人情報は、プライバシーポリシーに従って適切に扱います。（詳しくはプライバシーポリシーをご確認ください。）</p>
         <ul class="link_ul row_1">
           <li><a href="/faq/">FAQ</a></li>
           <li><a href="/policy/privacy-policy/">プライバシーポリシー</a></li>
         </ul>
-      </section>
-
-      <section id="section_02" class="section_mini template">
-        <h2 class="title">E-mailによるエントリー</h2>
-        <h3 class="title">送信先など</h3>
-        <p>まずは、原則的にE-mailにて受付いたしますので、必要事項を記載のうえ、送信してください。</p>
-        <p>送信先や記載内容に誤りがないかご確認ください。</p>
-        <div class="group_frame">
-          <dl class="dl_flex dt4">
-            <dt>送信先</dt><dd><span class="js-mail-c"></span></dd>
-            <dt>件名</dt><dd>採用エントリー：&#x25CB;&#x25CB;（バーガーキング高松オルネ店、他島美セントラルキッチンなど、希望応募先をお書きください）</dd>
-            <dt>本文</dt><dd><ul class="default"><li>希望職種（調理、ホール、管理部門など）</li><li>お名前</li><li>E-mailアドレス</li><li>お電話番号（日中連絡が取れる番号を記載してください）</li><li>その他連絡事項（任意）連絡にあたってご要望や配慮事項がございましたらお知らせください（例：連絡可能時間帯、応募に関するご要望など）</li></ul></dd>
-          </dl>
-        </div>
         <h3 class="title">担当からのご連絡について</h3>
         <ul class="default">
           <li>お問い合わせいただいた内容には、原則として5営業日以内にご返信いたします。</li>
@@ -128,10 +114,53 @@
         </ul>
       </section>
 
+      <section id="section_02" class="section_mini template">
+        <h2 class="title">エントリーフォーム</h2>
+        <div class="form-wrap">
+
+          <form name="entry" method="POST" data-netlify="true" enctype="multipart/form-data" action="/careers/entry/thanks/">
+
+            <!--input type="hidden" name="form-name" value="entry"-->
+            <input type="hidden" id="job_title" name="job_title"><input type="hidden" id="job_url" name="job_url">
+
+            <fieldset>
+
+              <legend>応募情報</legend>
+
+              <label for="name">お名前<span aria-hidden="true" class="required">※必須</span></label>
+              <input id="name" name="name" type="text" required aria-required="true">
+
+              <label for="email">E-mailアドレス<span aria-hidden="true" class="required">※必須</span></label>
+              <input id="email" name="email" type="email" placeholder="sample@example.com" required aria-required="true">
+
+              <label for="tel">電話番号</label>
+              <input id="tel" name="tel" type="tel" placeholder="090-1234-5678">
+
+            </fieldset>
+
+            <!--fieldset>
+
+              <legend>応募内容</legend>
+
+              <label for="message">志望動機</label>
+              <textarea id="message" name="message"></textarea>
+
+              <label for="resume">履歴書（PDF推奨）</label>
+              <input id="resume" type="file" name="resume">
+
+            </fieldset-->
+
+            <button type="submit" class="btn-flat-border">確認画面へ</button>
+
+          </form>
+
+        </div>
+      </section>
+
       <section id="section_03" class="section_mini template">
         <h2 class="title">その他の連絡方法</h2>
         <h3 class="title">郵便、電話、FAXでの連絡先</h3>
-        <p>E-mailでのご連絡が難しい場合は、次の連絡先へお願いいたします。</p>
+        <p>フォームでのエントリーが難しい場合は、次の連絡先へお願いいたします。</p>
         <div class="group_frame">
           <dl class="dl_flex dt4">
             <dt>部署</dt><dd>株式会社セトラスフードテック 人事総務部</dd>
