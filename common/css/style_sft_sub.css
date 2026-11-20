@@ -562,7 +562,7 @@ h2.ttl {
 }
 
 aside .btn-flat-border {
-  margin:30px auto;
+  margin-top:80px;
 }
 
 
@@ -1118,20 +1118,6 @@ aside .btn-flat-border {
   margin-bottom: 20px;
 }
 
-p.aside_title {
-  margin: 32px 0 8px;
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
-p.aside_title .dl_flex {
-  margin-top: 0;
-}
-
-p.aside_title:nth-child(1) {
-  margin-top: 0;
-}
-
 .update {
   margin: 0;
 }
@@ -1159,7 +1145,7 @@ p.aside_title:nth-child(1) {
 
 .news-eyecatch {
   max-width: 1200px;
-  margin: 0 auto 48px;
+  margin: 48px auto 60px auto;
 }
 
 .news-eyecatch img {
@@ -2378,17 +2364,13 @@ input[type=checkbox]:indeterminate:after {
   letter-spacing:0.2rem;
 }
 
-.release_table .tag_b {
-    letter-spacing : 0.05rem;
-}
-
 .release_table .tag_e {
     letter-spacing :  -0.05rem;
 }
 
 
 .release_table .tag_a{ background: rgba(253, 241, 231 ,.9); }/* 新商品・メニュー（ほんのり暖色ベージュ） */
-.release_table .tag_b{ background: rgba(255, 242, 224 ,.9); }/* キャンペーン・イベント（やわらかいオレンジ） */
+.release_table .tag_b{ background: rgba(255, 242, 224 ,.9); }/* 期間限定・イベント（やわらかいオレンジ） */
 .release_table .tag_c{ background: rgba(230, 240, 255 ,.9); }/* 店舗情報（クリアな水色） */
 .release_table .tag_d{ background: rgba(238, 242, 244 ,.9); }/* お知らせ（クールグレー寄り） */
 .release_table .tag_e{ background: rgba(235, 236, 237 ,.9); }/* プレスリリース（無機質グレー） */
